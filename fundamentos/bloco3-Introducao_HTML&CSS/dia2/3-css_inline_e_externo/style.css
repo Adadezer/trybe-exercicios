@@ -1,0 +1,41 @@
+body{
+    font-size: 16px;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orange;
+    font-weight: 600;
+}
+
+p{
+    font-size: 3em;
+}
+
+ul{
+    background-color: chocolate;
+}
+
+.paraul{
+    background-color: coral;
+}
+
+.explorando{
+    font-style: italic;
+    line-height: 3;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#amarelo{
+    background-color: yellow;
+}
+
+#vermelho{
+    background-color: red;
+}
+
+#marron{
+    background-color: brown;
+}
