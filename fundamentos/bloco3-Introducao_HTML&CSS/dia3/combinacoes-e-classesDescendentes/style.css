@@ -1,0 +1,60 @@
+ol li{
+    background-color: yellow;
+}
+
+ol li:nth-of-type(2n){ /* 2n = numero par? */
+    color: green;;
+}
+
+ol li:nth-of-type(2n+1){ /* 2n+1 = numero impar? */
+    text-transform: uppercase;
+}
+
+h1, h3{
+    color: red;
+}
+
+h1 em{
+    font-size: 40px;
+    border: 1px black solid;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+
+ul#linguagens li:nth-of-type(-n+3){
+    color: blue;
+}
+
+ul#linguagens li:nth-of-type(2){
+    background-color: pink;
+}
+
+ul li a:hover{
+    font-weight: bold;
+}
+
+ul li a[href*="stackoverflow"]{
+    color: orangered;
+}
+
+ul li a[href*="w3schools"]{
+    color: green;
+}
+
+ul li a[href*="mozilla"]{
+    color: black;
+}
+
+ul li a[href*="devdocs"]{
+    color: rgb(255, 238, 0);
+}
+
+ul li a[href*="trybe"]{
+    color: green;
+}
