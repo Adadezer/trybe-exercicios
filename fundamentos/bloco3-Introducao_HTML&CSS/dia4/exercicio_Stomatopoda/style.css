@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    list-style-type: none;
+}
+body{
+    background-color: rgb(199, 251, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header{
+    text-align: center;
+    color: blueviolet;
+}
+
+
+nav, #bibliografia{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+nav ul li, #bibliografia ul li{
+    display: inline-block;
+    margin-right: 100px;
+    margin-top: 10px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: x-large;
+    color: deeppink;
+}
+
+h3{
+    color: rgb(218, 58, 0);
+}
+
+
+
+/* SOBRE */
+h2{
+    color: blueviolet;
+}
+
+section#sobre{
+    /* background-color: brown; */
+    height: 140px;
+    margin: 20px 0px;
+}
+
+div{
+    float: right;
+    border: 2px solid rgb(95, 5, 180);
+    margin-left: 25px;
+}
+
+#forte, #rapido{
+    display: inline-block;
+    width: 49%;
+    margin-left: 6px;
+    text-align: center;
+}
+
+img{
+    width: 350px;
+    margin: 20px 0;
+}
+
+#visao{
+    display: block;
+    text-align: center;
+}
+
+aside{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: deeppink;
+}
+
+footer{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(95, 5, 180);
