@@ -2,14 +2,14 @@
 // Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
 // Valor esperado no retorno da função: Fernanda .
 
-let contador = 0;
-function maiorQuantCaracteres(array){
-    for (index = 0; index < array.length; index ++){
-        contador = contador + array[index].length;
+function maiorPalavra(palavras) {
+    let maiorPalavra = palavras[0];
+    for (let indice in palavras) {
+      if (maiorPalavra.length < palavras[indice].length) {
+        maiorPalavra = palavras[indice];
+      }
     }
-    
-
-    return contador;
-}
-
-console.log(maiorQuantCaracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+    return maiorPalavra;
+  }
+  
+  console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
