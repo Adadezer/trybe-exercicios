@@ -13,3 +13,17 @@ sectionFilhoOndeEstou.id = "filhoOndeEstou";
 
 document.body.appendChild(sectionFilhoOndeEstou);
 ondeEstou.appendChild(sectionFilhoOndeEstou);
+
+// 3- Crie um filho para primeiroFilhoDoFilho
+let primeiroFilhoDoFilho = document.querySelector("#primeiroFilhoDoFilho");
+let sectionPrimeiroFilhoDoFilho = document.createElement("section");
+sectionPrimeiroFilhoDoFilho.id = "filhoPrimeiroFilhoDoFilho";
+
+document.body.appendChild(sectionPrimeiroFilhoDoFilho);
+primeiroFilhoDoFilho.appendChild(sectionPrimeiroFilhoDoFilho);
+
+// 4- A partir desse filho criado, acesse terceiroFilho
+let filhoPrimeiroFilhoDoFilho = document.querySelector("#filhoPrimeiroFilhoDoFilho");
+let sobeHierarquia = filhoPrimeiroFilhoDoFilho.parentElement.parentElement.parentElement;
+let desceHierarquia = sobeHierarquia.lastElementChild.previousElementSibling.previousElementSibling;
+// console.log(desceHierarquia);
