@@ -80,7 +80,13 @@
       // 4- Adicione a tag p como filho do section criado no passo 3 e coloque algum texto
       let paragCenterContent = document.createElement("p");
       paragCenterContent.innerText = "texto paragrafo conteudo do centro";
+      
       centerContent.appendChild(paragCenterContent);
+
+      // 5- Adicione a tag section com a classe left-content como filho da tag main criada no passo 2
+      let leftContent = document.createElement("section");
+      leftContent.className = "left-content";
+      mainContent.appendChild(leftContent);
     </script>
   </body>
 </html>
