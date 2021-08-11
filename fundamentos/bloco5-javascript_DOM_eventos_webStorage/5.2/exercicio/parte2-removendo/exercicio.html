@@ -117,8 +117,11 @@
 
         // 9- Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2
         for(i = 0; i <= 2; i += 1){
-        let h3 = document.createElement("h3");
-        mainContent.appendChild(h3);
+            let h3 = document.createElement("h3");
+            // (removendo elementos)2- Adicione a classe description nas 3 tags h3 criadas
+            h3.className = "description";
+            
+            mainContent.appendChild(h3);
         }
 
 
@@ -126,6 +129,12 @@
 
         // 1- Adicione a classe title na tag h1 criada
         titulo.className = "title";
+
+        // 2- Adicione a classe description nas 3 tags h3 criadas
+        // h3.className = "description";
+
+        // 3- Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild()
+        mainContent.removeChild(leftContent); 
     </script>
   </body>
 </html>
