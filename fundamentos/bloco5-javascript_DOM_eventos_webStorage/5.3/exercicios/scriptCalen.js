@@ -25,20 +25,35 @@ function daysOfMonth(){
     let liDays = document.createElement("li");
     liDays.innerHTML = dezDaysList[index];
     liDays.className = "day";
+
     document.body.appendChild(liDays);
     ulDays.appendChild(liDays);
 
     if(dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31){
       liDays.className = "day holiday";
+
       document.body.appendChild(liDays);
       ulDays.appendChild(liDays);
     }
 
     if(dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 || dezDaysList[index] === 25){
       liDays.className = "day friday";
+
       document.body.appendChild(liDays);
       ulDays.appendChild(liDays);
     }
   }
 }
 daysOfMonth();
+
+// Exercício 2
+function botaoFeriado(param) {
+  let buttonsContainer = document.querySelector(".buttons-container")
+  let btnFeriados = document.createElement("button");
+  btnFeriados.innerHTML = param;
+  btnFeriados.id = "btn-holiday";
+  
+  document.body.appendChild(btnFeriados);
+  buttonsContainer.appendChild(btnFeriados);
+}
+botaoFeriado("Feriados");
