@@ -11,9 +11,9 @@ const myWebpage = document.getElementById('my-spotrybefy');
 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?*/
 
 // adiciono em cada li, o evento click, e o nome da função (função essa q será executada depois que eu clicar na li)
-firstLi.addEventListener('click', addTech); 
-secondLi.addEventListener('click', addTech);
-thirdLi.addEventListener('click', addTech);
+firstLi.addEventListener("click", addTech); 
+secondLi.addEventListener("click", addTech);
+thirdLi.addEventListener("click", addTech);
 
 function addTech(event) {
     let addTech = document.querySelector(".tech"); //pego a classe tech
@@ -23,6 +23,13 @@ function addTech(event) {
 
 /*3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 com a classe 'tech';*/
+input.addEventListener("input", alterarTexto); // também pode ser usado o change, a diferença é q o input muda no hora, e o change muda somente depois de perder o foco
+function alterarTexto(event){
+    let addTech = document.querySelector(".tech"); // pego a classe tech
+    addTech.innerHTML = event.target.value; // adiciono na classe o texto q está escrito no elemento que chamou a função, no caso o id input
+} //.value é requisito para se usar o addEventListener(input), q pega oq é digitado no campo
+  //.event.target é quem está chamando a função
+  
 
 /*4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 redirecione para alguma página;
