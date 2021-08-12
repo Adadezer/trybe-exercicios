@@ -24,6 +24,7 @@ function addTech(event) {
 /*3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 com a classe 'tech';*/
 input.addEventListener("input", alterarTexto); // também pode ser usado o change, a diferença é q o input muda no hora, e o change muda somente depois de perder o foco
+
 function alterarTexto(event){
     let addTech = document.querySelector(".tech"); // pego a classe tech
     addTech.innerHTML = event.target.value; // adiciono na classe o texto q está escrito no elemento que chamou a função, no caso o id input
@@ -34,11 +35,39 @@ function alterarTexto(event){
 /*4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 redirecione para alguma página;
 4.1. Que tal redirecionar para seu portifólio?*/
+myWebpage.addEventListener("dblclick", portifolio);
 
-/*5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-a cor do mesmo;
+function portifolio(event) {
+    window.location.assign("https://adadezer.github.io/");
 
-Segue abaixo um exemplo do uso de event.target:*/
+    /* 
+      Errado (Não funcional)
+     let main = document.querySelector("main");
+     let tagA = document.createElement("a");
+     tagA.href = "https://adadezer.github.io/";
+    
+     document.body.appendChild(tagA);
+     tagA.appendChild(myWebpage);
+     main.appendChild(tagA);
+    */
+}
+
+/* 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
+a cor do mesmo;*/
+myWebpage.addEventListener("mouseover", alterarCor);
+
+function alterarCor(event) {
+    event.target.style.color = "yellow"; //altera a cor de qm chamou o evento
+}
+
+// tirar o mouse de cima
+// myWebpage.addEventListener('mouseout', function(event) {
+//     event.target.style.color = 'unset';
+// });
+
+
+
+// Segue abaixo um exemplo do uso de event.target:
 
 
 function resetText(event) {
