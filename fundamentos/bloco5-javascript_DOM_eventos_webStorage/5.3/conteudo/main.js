@@ -52,10 +52,22 @@ function portifolio(event) {
     */
 }
 
-/*5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-a cor do mesmo;
+/* 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
+a cor do mesmo;*/
+myWebpage.addEventListener("mouseover", alterarCor);
 
-Segue abaixo um exemplo do uso de event.target:*/
+function alterarCor(event) {
+    event.target.style.color = "yellow"; //altera a cor de qm chamou o evento
+}
+
+// tirar o mouse de cima
+// myWebpage.addEventListener('mouseout', function(event) {
+//     event.target.style.color = 'unset';
+// });
+
+
+
+// Segue abaixo um exemplo do uso de event.target:
 
 
 function resetText(event) {
