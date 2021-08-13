@@ -65,8 +65,10 @@ function corHoliday() {
     //logica if - ele vem setado com o rgb, ao clicar na primeira vez, ele vai ver se a cor é igual red, não é... ele vai pro else e deixa red. Na segunda vez, a cor é red, se for igual a red, ele seta pra rgb
     if(liHoliday[index].style.backgroundColor === "red"){
       liHoliday[index].style.backgroundColor = "rgb(238,238,238)";
+      liHoliday[index].style.color = "#777";
     }else{
       liHoliday[index].style.backgroundColor = "red";
+      liHoliday[index].style.color = "white";
     }
   }
 }
@@ -106,3 +108,42 @@ function textoFriday(){
 
 let btnSexta = document.querySelector("#btn-friday");
 btnSexta.addEventListener("click", textoFriday);
+
+// Exercicio 6
+
+let ulDays = document.querySelector("#days");
+
+function colocarZoom(event) {
+  event.target.style.fontSize = "35px";
+}
+
+function tirarZoom(event){
+  event.target.style.fontSize = "18px";
+}
+
+ulDays.addEventListener("mouseover", colocarZoom);
+ulDays.addEventListener("mouseout", tirarZoom);
+
+/*   outro jeito, menos usual
+
+let liDays = document.querySelectorAll(".day");
+
+function colocarZoom(event) {
+  for (let index = 0; index < liDays.length; index++) {
+    event.target.style.fontSize = "30px";
+    
+  }
+}
+
+function tirarZoom(event){
+  for (let index = 0; index < liDays.length; index++) {
+    event.target.style.fontSize = "18px";
+    
+  }
+}
+
+for (let index = 0; index < liDays.length; index++) {
+  liDays[index].addEventListener("mouseover", colocarZoom);
+  liDays[index].addEventListener("mouseout", tirarZoom);
+}
+*/
