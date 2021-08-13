@@ -47,6 +47,7 @@ function daysOfMonth(){
 daysOfMonth();
 
 // Exercício 2
+
 function botaoFeriado(param) {
   let buttonsContainer = document.querySelector(".buttons-container")
   let btnFeriados = document.createElement("button");
@@ -57,3 +58,23 @@ function botaoFeriado(param) {
   buttonsContainer.appendChild(btnFeriados);
 }
 botaoFeriado("Feriados");
+
+// Exercício 3
+
+//preciso criar uma variavel pra pegar o id btn-holiday pois, no exercicio 2 ela foi criada por uma função, então nao posso usar a q já existe no exercicio 2
+let btnFeriados = document.querySelector("#btn-holiday"); 
+btnFeriados.addEventListener("click", corHoliday);
+
+function corHoliday() {
+  let liHoliday = document.querySelectorAll(".holiday"); //não esquecer q o querySelectorAll sempre precisa do for pra manipular o elemento, se quiser manipular somente um, usar o querySelector normal
+  for (let index = 0; index < liHoliday.length; index += 1){
+    //logica if - ele vem setado com o rgb, ao clicar na primeira vez, ele vai ver se a cor é igual red, não é... ele vai pro else e deixa red. Na segunda vez, a cor é red, se for igual a red, ele seta pra rgb
+    if(liHoliday[index].style.backgroundColor === "red"){
+      liHoliday[index].style.backgroundColor = "rgb(238,238,238)";
+    }else{
+      liHoliday[index].style.backgroundColor = "red";
+    }
+  }
+}
+
+
