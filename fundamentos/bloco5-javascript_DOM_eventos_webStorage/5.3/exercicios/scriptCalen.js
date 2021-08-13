@@ -26,20 +26,18 @@ function daysOfMonth(){
     liDays.innerHTML = dezDaysList[index];
     liDays.className = "day";
 
-    document.body.appendChild(liDays);
+    // document.body.appendChild(liDays);
     ulDays.appendChild(liDays);
 
     if(dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31){
       liDays.className = "day holiday";
 
-      document.body.appendChild(liDays);
       ulDays.appendChild(liDays);
     }
 
     if(dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 || dezDaysList[index] === 25){
       liDays.className = "day friday";
 
-      document.body.appendChild(liDays);
       ulDays.appendChild(liDays);
     }
   }
@@ -54,7 +52,7 @@ function botaoFeriado(param) {
   btnFeriados.innerHTML = param;
   btnFeriados.id = "btn-holiday";
   
-  document.body.appendChild(btnFeriados);
+  // document.body.appendChild(btnFeriados);
   buttonsContainer.appendChild(btnFeriados);
 }
 botaoFeriado("Feriados");
@@ -77,4 +75,15 @@ function corHoliday() {
   }
 }
 
+// Exercício 4
 
+function botaoSexta(params) {
+  let btnSexta = document.createElement("button");
+  btnSexta.innerHTML = params;
+  btnSexta.id = "btn-friday";
+
+  let buttonsContainer = document.querySelector(".buttons-container");
+  
+  buttonsContainer.appendChild(btnSexta);
+}
+botaoSexta("Sexta-Feira");
