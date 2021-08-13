@@ -59,10 +59,6 @@ botaoFeriado("Feriados");
 
 // Exercício 3
 
-//preciso criar uma variavel pra pegar o id btn-holiday pois, no exercicio 2 ela foi criada por uma função, então nao posso usar a q já existe no exercicio 2
-let btnFeriados = document.querySelector("#btn-holiday"); 
-btnFeriados.addEventListener("click", corHoliday);
-
 function corHoliday() {
   let liHoliday = document.querySelectorAll(".holiday"); //não esquecer q o querySelectorAll sempre precisa do for pra manipular o elemento, se quiser manipular somente um, usar o querySelector normal
   for (let index = 0; index < liHoliday.length; index += 1){
@@ -74,6 +70,10 @@ function corHoliday() {
     }
   }
 }
+
+//preciso criar uma variavel pra pegar o id btn-holiday pois, no exercicio 2 ela foi criada por uma função, então nao posso usar a q já existe no exercicio 2
+let btnFeriados = document.querySelector("#btn-holiday"); 
+btnFeriados.addEventListener("click", corHoliday);
 
 // Exercício 4
 
@@ -87,3 +87,22 @@ function botaoSexta(params) {
   buttonsContainer.appendChild(btnSexta);
 }
 botaoSexta("Sexta-Feira");
+
+// Exercicio 5
+
+function textoFriday(){
+  let liSexta = document.querySelectorAll(".friday"); //pega as li q tem a classe friday
+  let diasDaSexta = [4, 11, 18, 25]; // array com os dias da sexta, ele tem q ser declarado aqui em cima pois, aparentemente a função executa o codigo de cima pra baixo, então antes do if usar o array, ele já tem q existir antes da logica ser executada (se eu declarar o array fora da função, o array pode ser declarado tanto em cima quanto em baixo).
+
+  for (let i = 0; i < liSexta.length; i += 1) { // percorre as li q tem a classe friday
+    
+    if(liSexta[i].innerHTML === "SEXTOU"){ // se quando eu clicar o texto da classe friday for igual a "SEXTOU", ele muda para os dias do array de sexta
+      liSexta[i].innerHTML = diasDaSexta[i];
+    } else{
+      liSexta[i].innerHTML = "SEXTOU";
+    }
+  }
+}
+
+let btnSexta = document.querySelector("#btn-friday");
+btnSexta.addEventListener("click", textoFriday);
