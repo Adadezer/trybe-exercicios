@@ -147,3 +147,14 @@ for (let index = 0; index < liDays.length; index++) {
   liDays[index].addEventListener("mouseout", tirarZoom);
 }
 */
+
+// Exercicio 7
+
+function tarefa(params) {
+  let spanCozinhar = document.createElement("span");
+  spanCozinhar.innerHTML = params;
+  let myTasks = document.querySelector(".my-tasks");
+
+  myTasks.appendChild(spanCozinhar);
+}
+tarefa("cozinhar");
