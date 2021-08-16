@@ -150,11 +150,21 @@ for (let index = 0; index < liDays.length; index++) {
 
 // Exercicio 7
 
+const myTasks = document.querySelector(".my-tasks");
 function tarefa(params) {
   let spanCozinhar = document.createElement("span");
   spanCozinhar.innerHTML = params;
-  let myTasks = document.querySelector(".my-tasks");
 
   myTasks.appendChild(spanCozinhar);
 }
 tarefa("cozinhar");
+
+// Exercicio 8
+
+function legendaCorTarefa(cor) {
+  let corTask = document.createElement("div");
+  corTask.className = "task"
+  corTask.style.backgroundColor = cor;
+  myTasks.appendChild(corTask);
+}
+legendaCorTarefa("green");
