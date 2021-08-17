@@ -162,9 +162,23 @@ tarefa("cozinhar");
 // Exercicio 8
 
 function legendaCorTarefa(cor) {
-  let corTask = document.createElement("div");
-  corTask.className = "task"
-  corTask.style.backgroundColor = cor;
-  myTasks.appendChild(corTask);
+  let criaCorTask = document.createElement("div");
+  criaCorTask.className = "task"
+  criaCorTask.style.backgroundColor = cor;
+  myTasks.appendChild(criaCorTask);
 }
 legendaCorTarefa("green");
+
+// Exercicio 9
+function selected(event){
+  let selected = document.getElementsByClassName("task selected");
+
+  if (selected.length === 0){
+    event.target.className = "task selected";
+  } else {
+    event.target.className = "task";
+  }
+  
+}
+const corTask = document.querySelector(".task");
+corTask.addEventListener("click", selected);
