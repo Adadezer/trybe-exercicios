@@ -16,34 +16,4 @@ function estadosBrasileiros() {
 }
 estadosBrasileiros();
 
-function ultimoEmprego(event) {
-    event.preventDefault();
-    let inicioUltimoEmprego = document.getElementById('inicioUltimoEmprego').value;
-    if (!inicioUltimoEmprego.includes('/')) { // se no valor do input inicioUltimoEmprego não tiver '/', mostra o alert
-        alert('Erro: use barra ("/ ") para separar a data')
-    }
-
-    let ddmmaaaa = inicioUltimoEmprego.split('/', 3); 
-    for (let index = 0; index < ddmmaaaa.length; index += 1) {
-        ddmmaaaa[index] = parseInt(ddmmaaaa[index]);
-    }
-
-    if (ddmmaaaa[0] <=0 || ddmmaaaa[0] >31) {
-        alert('Erro: dia tem que estar entre 1 e 31');
-    }
-
-    if (ddmmaaaa[1] <=0 || ddmmaaaa[1] >12) {
-        alert('Erro: mês tem que estar entre 1 e 12');
-    }
-
-    if (ddmmaaaa[2] < 0) {
-        alert('Erro: ano não pode ser negativo');
-    }
-}
-const btnEnviar = document.getElementById('enviar');
-btnEnviar.addEventListener('click', ultimoEmprego);
-
-// let data = '20/10/2020'
-// console.log(data.split('/', 3));
-
-// split -> usado somente com strings ('separador', quantas vezes vai dividir a string, no caso ele separa do começo da string até achar o primeiro separador, divide ela, procura o segundo a partir do primeiro, divide ela... essa divisão é mostrada num array)
+let data = document.getElementById('inicioUltimoEmprego').DatePickerX.init({format: 'dd/mm/yyyy'});
