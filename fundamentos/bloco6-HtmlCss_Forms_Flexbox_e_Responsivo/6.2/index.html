@@ -11,68 +11,128 @@
     <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="DatePickerX/dist/css/DatePickerX.min.css">
+    <script src="DatePickerX/dist/js/DatePickerX.min.js"></script>
+
+    <link rel="stylesheet" href="popup-validation/bin/validation.min.css">
+    <script src="popup-validation/bin/validation.min.js"></script>
 </head>
 <body>
-    <form action="" method="get">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-    
-            <label for="input-nome">Nome:</label>
-            <input type="text" id="input-nome" name="nomePessoa" maxlength="40" required>
-            <br>
-    
-            <label for="input-email">E-mail:</label>
-            <input type="email" id="input-email" name="email" maxlength="50" required>
-            <br>
-    
-            <label for="input-cpf">CPF:</label>
-            <input type="text" id="input-cpf" name="cpf" maxlength="11" required>
-            <br>
-    
-            <label for="input-endereco">Endereço:</label>
-            <input type="text" id="input-endereco" name="endereco" maxlength="200" required>
-            <br>
-    
-            <label for="input-cidade">Cidade:</label>
-            <input type="text" id="input-cidade" name="cidade" maxlength="28" required>
-            <br>
-    
-            <label for="input-estado">Estado:</label>
-            <select id="select-estado" name="estado" required></select>
-            <br>
-    
-            <label for="complemento-casa"> Complemento:
-                <input type="radio" id="complemento-casa" name="complemento" required>Casa
-            </label>
-            <label for="complemento-apartamento">
-                <input type="radio" id="complemento-apartamento" name="complemento" required>Apartamento
-            </label>
-        </fieldset>
-    
-        <fieldset>
-            <legend>Ultimo Emprego</legend>
-    
-            <label for="resumo-curriculo">Resumo do Curriculo:</label>
-            <br>
-            <textarea id="resumo-curriculo" name="resumo-curriculo" cols="50" rows="10" maxlength="1000" required></textarea>
-            <br>
-    
-            <label for="cargo">Cargo:</label>
-            <input type="text" id="cargo" name="cargo" maxlength="40" required>
-            <br>
-    
-            <label for="descricao-cargo"></label>Descrição do Cargo:
-            <input type="text" id="descricao-cargo" name="descricao-cargo" maxlength="500" required>
-            <br>
-    
-            <label for="inicioUltimoEmprego">Inicio</label>
-            <input type="text" id="inicioUltimoEmprego" name="inicioUltimoEmprego" placeholder="dd/mm/aaaa">
+
+    <!-- DADOS PESSOAIS -->
+    <div class="container col-md-6 offset-md-3"> 
+        <!-- col-md-6 offset-md-3 -> https://pt.stackoverflow.com/questions/281198/ como-centralizar-meu-form-com-bootstrap-deixando-responsivo -->
+        <form action="" method="get">
+        
+            <legend class="text-center">Dados Pessoais</legend>
+            
+            <div class="row">
+                <div class=" col">
+                    <label for="input-nome">Nome:</label>
+                    <input type="text" id="input-nome" class="form-control" name="nomePessoa" maxlength="40" required>
+                </div>
+            </div>
             <br>
 
-            <button type="submit" id="enviar">Enviar</button>
-        </fieldset>
-    </form>
-    
+            <div class="row">
+                <div class=" col">
+                    <label for="input-email">E-mail:</label>
+                    <input type="email" id="input-email" class="form-control"name="email" maxlength="80" required>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class=" col">
+                    <label for="input-cpf">CPF:</label>
+                    <input type="text" id="input-cpf" class="form-control" name="cpf" maxlength="11" required>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class=" col">
+                    <label for="input-endereco">Endereço:</label>
+                    <input type="text" id="input-endereco" class="form-control" name="endereco" maxlength="200" required>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class=" col">
+                    <label for="input-cidade">Cidade:</label>
+                    <input type="text" id="input-cidade" class="form-control" name="cidade" maxlength="28" required>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class=" col">
+                    <label for="input-estado">Estado:</label>
+                    <select id="select-estado" class="form-select" name="estado" size = "3" required></select>
+                </div>
+            </div>
+            <br>
+
+            <label for="input-estado">complemento:</label>
+            <br>
+            <div class="form-check form-check-inline">
+                <label for="complemento-casa" class="form-check-label" >Casa</label>
+                <input type="radio" id="complemento-casa" class="form-check-input"  name="complemento" >
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label for="complemento-apartamento" class="form-check-label">Apartamento</label>
+                <input type="radio" id="complemento-apartamento" class="form-check-input" name="complemento" >
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <!-- ULTIMO EMPREGO -->
+    <div class="container col-md-6 offset-md-3">
+        <form action="" method="get">
+            <legend class="text-center">Ultimo Emprego</legend>
+
+            <label for="resumo-curriculo">Resumo do Curriculo:</label>
+            <div class="form-floating">
+                <textarea id="resumo-curriculo" class="form-control" name="resumo-curriculo" style="height: 200px" maxlength="1000" required></textarea>
+                <label for="floatingTextarea">Escreva aqui um resumo do seu curriculo</label>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col">
+                    <label for="cargo">Cargo:</label>
+                    <br>
+                    <input type="text" id="cargo" class="form-control" name="cargo" maxlength="40" required>
+                </div>
+            </div>  
+            <br>
+
+            <div class="row">
+                <div class="col">
+                    <label for="descricao-cargo">Descrição do Cargo:</label>
+                    <br>
+                    <input type="text" id="descricao-cargo" class="form-control" name="descricao-cargo" maxlength="500" required>
+                </div>
+            </div>       
+            <br>
+
+            <div class="row">
+                <div class="col">
+                    <label for="inicioUltimoEmprego">Inicio:</label>
+                    <br>
+                    <input type="text" id="inicioUltimoEmprego" class="form-control" name="inicioUltimoEmprego">           
+                </div>
+            </div>       
+            <br>
+
+            <button type="button" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
