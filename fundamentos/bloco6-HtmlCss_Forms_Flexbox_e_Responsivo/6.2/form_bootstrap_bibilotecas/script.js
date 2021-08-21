@@ -17,3 +17,53 @@ function estadosBrasileiros() {
 estadosBrasileiros();
 
 let data = document.getElementById('inicioUltimoEmprego').DatePickerX.init({format: 'dd/mm/yyyy'});
+
+new window.JustValidate('. js-form', {
+    // options here
+});
+
+new window.JustValidate('.formCurriculo', {
+    Rules: {
+      email: {
+          required: true,
+          email: true
+      },
+      checkbox: {
+          required: true
+      },
+      name: {
+          required: true,
+          minLength: 3,
+          maxLength: 15
+      },
+      text: {
+          required: true,
+          maxLength: 300,
+          minLength: 5
+      },
+      password: {
+          required: true,
+          password: true,
+          minLength: 4,
+          maxLength: 8
+      },
+      zip: {
+          required: true,
+          zip: true
+      },
+      phone: {
+          phone: true
+      }
+  }
+});
+
+new window.JustValidate('.formCurriculo', {
+    Messages: {
+      required: 'Campo obrigatório',
+      email: 'Por favor, use um email válido',
+      maxLength: 'The field must contain a maximum of :value characters',
+      minLength: 'The field must contain a minimum of :value characters',
+      password: 'Password is not valid',
+      remote: 'Email already exists'
+    },
+});
