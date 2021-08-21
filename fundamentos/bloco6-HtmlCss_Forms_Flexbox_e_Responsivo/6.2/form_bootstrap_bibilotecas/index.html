@@ -12,25 +12,25 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="DatePickerX/dist/css/DatePickerX.min.css">
-    <script src="DatePickerX/dist/js/DatePickerX.min.js"></script>
+    <link rel="stylesheet" href="DatePickerX-master/dist/css/DatePickerX.min.css">
+    <script src="DatePickerX-master/dist/js/DatePickerX.min.js"></script>
 
-    <link rel="stylesheet" href="popup-validation/bin/validation.min.css">
-    <script src="popup-validation/bin/validation.min.js"></script>
+    <link rel="stylesheet" href="Just-validate-master/dist/css/justValidateTooltip.min.css">
+    <script src="Just-validate-master/dist/js/just-validate.min.js"></script>
 </head>
 <body>
 
     <!-- DADOS PESSOAIS -->
     <div class="container col-md-6 offset-md-3"> 
         <!-- col-md-6 offset-md-3 -> https://pt.stackoverflow.com/questions/281198/ como-centralizar-meu-form-com-bootstrap-deixando-responsivo -->
-        <form action="" method="get">
+        <form action="" method="get" class="formCurriculo">
         
             <legend class="text-center">Dados Pessoais</legend>
             
             <div class="row">
                 <div class=" col">
                     <label for="input-nome">Nome:</label>
-                    <input type="text" id="input-nome" class="form-control" name="nomePessoa" maxlength="40" required>
+                    <input type="text" id="input-nome" class="form-control" data-validate-field="name" name="nomePessoa" maxlength="40">
                 </div>
             </div>
             <br>
@@ -38,7 +38,7 @@
             <div class="row">
                 <div class=" col">
                     <label for="input-email">E-mail:</label>
-                    <input type="email" id="input-email" class="form-control"name="email" maxlength="80" required>
+                    <input type="email" id="input-email" class="form-control" data-validate-field="email" name="email" maxlength="80" required>
                 </div>
             </div>
             <br>
