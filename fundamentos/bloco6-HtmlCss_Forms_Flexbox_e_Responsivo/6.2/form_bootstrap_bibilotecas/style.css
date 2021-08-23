@@ -1,3 +1,17 @@
+html body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 22, 20);
+}
+
+.container {
+    color: rgb(95, 214, 111);
+}
+
 #resumo-curriculo {
     resize: none;
+}
+
+#labelResumo {
+    color: black;
 }
