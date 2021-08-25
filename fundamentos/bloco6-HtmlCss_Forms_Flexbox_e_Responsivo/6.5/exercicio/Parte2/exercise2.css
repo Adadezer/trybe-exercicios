@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  body{
+    background-color: rgb(236, 206, 195) ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    color: rgb(88, 48, 33);
+  }
+
+  header, footer {
+    background-color: rgb(163, 117, 101);
+  }
+  header p, footer h3 {
+    color: rgb(255, 151, 24);
+    text-align: center;
+  }
+
+  .aside-one, .aside-two {
+    background-color: rgb(253, 215, 169);
+  }
+
+  nav ul {
+    font-weight: bold;
+    display: flex;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer p {
+    color: rgb(44, 29, 23);
+  }
+
+  
+
+  /* CELULARES */
+  @media only screen and (max-width: 600px) {
+    header {
+      padding: 2%;
+      height: 85px;
+    }
+
+    header p {
+      font-size: 21px;
+    }
+
+    header nav ul {
+      justify-content: space-around;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .aside-one, .aside-two {
+      border-radius: 200px;
+      text-align: center;
+      line-height: 30px;
+      font-size: large;
+    }
+
+    .aside-one {
+      height: 440px;
+    }
+
+    .aside-two {
+      height: 220px;
+    }
+
+    .aside-one h2, .aside-two h2 {
+      margin-bottom: 20px;
+      padding-top: 10px;
+    }
+
+    .main-content {
+      margin: 5%;
+    }
+
+    .main-content p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    footer {
+      height: 180px;
+    }
+
+    footer h3 {
+      margin-bottom: 10px;
+    }
+    
+  }
+
+  /* TABLETS */
+
+  @media only screen and (min-width: 768px) {
+
+  }
+
+  /* NOTEBOOK E DESKTOP */
+
+  @media only screen and (min-width: 992px) {
+
+  }
