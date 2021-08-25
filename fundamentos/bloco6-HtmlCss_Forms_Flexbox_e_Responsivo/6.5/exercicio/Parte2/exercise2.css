@@ -110,7 +110,75 @@ html {
   /* TABLETS */
 
   @media only screen and (min-width: 768px) {
+    header {
+      height: 110px;
+      width: 100%;
+      position: fixed;
+      padding: 2%;
+      
+    }
 
+    header p {
+      font-size: 30px;
+    }
+
+    header nav ul {
+      justify-content: space-around;
+      margin-top: 22px;
+      font-size: 25px;
+    }
+
+    .aside-one, .aside-two {
+      border-radius: 220px;
+      text-align: center;
+      line-height: 40px;
+      font-size: x-large;
+    }
+
+    .aside-one {
+      height: 565px;
+      margin-top: 110px;
+    }
+
+    .aside-two {
+      font-size: 22px;
+      height: 295px;
+    }
+
+    .aside-one h2, .aside-two h2 {
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    .aside-two h2 {
+      font-size: xx-large;
+    }
+
+    .main-content {
+      margin: 8%;
+    }
+
+    .main-content h1 {
+      text-align: center;
+    }
+
+    .main-content p {
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    footer {
+      height: 180px;
+    }
+
+    footer h3 {
+      font-size: x-large;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: large;
+    }
   }
 
   /* NOTEBOOK E DESKTOP */
