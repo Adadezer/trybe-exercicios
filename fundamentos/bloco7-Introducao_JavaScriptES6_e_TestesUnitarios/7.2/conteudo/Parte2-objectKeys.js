@@ -95,6 +95,7 @@ const listSkills = (student) => {
   
   for(index in arrayOfSkills){
     console.log(`${arrayOfSkills[index]}, Nível: ${student[arrayOfSkills[index]]}`);
+    // nessa linha mostro a 'propriedade dentro de arrayOfSkilss, q é a chave, coloco o index pois quero pegar uma chave de cada vez - depois em Nível: eu pego a 'propriedade' dentro da chave arrayOfSkills, que está dentro de student, pense em algo como 'a propriedade dentro da propriedade, esta está dentro de outra propriedade'
   }
 };
 
