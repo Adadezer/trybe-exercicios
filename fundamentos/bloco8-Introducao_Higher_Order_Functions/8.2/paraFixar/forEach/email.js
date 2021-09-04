@@ -1,5 +1,7 @@
 // Para fixar
 
+// forEach executa a função em cada elemento 
+
 // 1 - Use o método forEach chamando a callback showEmailList para apresentar os emails
 
 const emailListInData = [
