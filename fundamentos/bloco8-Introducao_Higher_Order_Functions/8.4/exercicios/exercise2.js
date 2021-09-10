@@ -9,18 +9,23 @@ const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Fra
 
 function reduceNames() {
   // escreva seu código aqui
-    return books.reduce((acc, curr, i, books) =>{
-        // console.log(acc);
-        // let resposta = '';
-        if (i === books.length - 1){
-            acc += `${curr.author.name}.`;
+    const names = books.reduce((acc, curr, i, books) =>{
+        // console.log('acc: ' + acc);
+        // console.log('curr: ' + curr.author.name);
+      
+        if (i === books.length - 1){ // se o indice do array for o ultimo
+            return `${acc} ${curr.author.name}.` // coloca um ponto depois do author.name
         } else {
-            acc += `${curr.author.name}, `
+            return `${acc} ${curr.author.name},`; // senão coloca um virfula
         };
+    }, ''); // começa com espaço pra pegar o nome do primeiro author, sem ele o primeiro elemento é um objeto de objetos (está assim no array base)
+    return names.trim(); // o trim tira os espaçõs no começo e no final do array, como o primeiro valor é um espaço, o trim tira ele depois
 
-        return acc;
-    }, '');
+}
 
+// console.log(reduceNames());
+
+assert.strictEqual(reduceNames(), expectedResult);
 
 //   let nome = '';
 //   for (let i = 0; i < books.length; i += 1) {
@@ -34,8 +39,6 @@ function reduceNames() {
 //   }
 
 //   return nome;
-}
+//}
 
 // console.log(reduceNames());
-
-assert.strictEqual(reduceNames(), expectedResult);
