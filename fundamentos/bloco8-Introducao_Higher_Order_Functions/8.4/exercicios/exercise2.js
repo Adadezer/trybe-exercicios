@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const books = require('./arrayBase');
+const books = require('./arrayExc234');
 
 // 2 - Crie uma string com os nomes de todas as pessoas autoras.
 
