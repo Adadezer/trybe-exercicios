@@ -8,10 +8,13 @@ const expectedResult = 43;
 
 function averageAge() {
   // escreva seu código aqui
-  for (let i = 0; i < books.length; i += 1) {
-    const idade = books[i].releaseYear - books[i].author.birthYear;    
-  }
+  const idade = books.reduce((acc, curr) =>{
+      return acc + (curr.releaseYear - curr.author.birthYear); // soma as idades, idade é data atual - data nascimento
+  }, 0);
+  
+  const media = idade / books.length;
+  return media;
 }
 
-averageAge();
-// assert.strictEqual(averageAge(), expectedResult);
+// console.log(averageAge());
+assert.strictEqual(averageAge(), expectedResult);
