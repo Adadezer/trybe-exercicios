@@ -11,7 +11,7 @@ const additionalItens = ['morango', 'maca', 'kiwi'];
 const fruitSalad = (fruit, additional) => {
   // Esreva sua função aqui
 
-  return [...specialFruit, ...additionalItens]
+  return [...fruit, ...additional]
 
 };
 
