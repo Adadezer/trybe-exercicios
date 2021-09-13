@@ -26,5 +26,5 @@ const expected = [
   { name: 'Miguel', average: 9.2 },
   { name: 'Maria Clara', average: 8.8 },
 ];
-console.log(studentAverage());
-// assert.deepStrictEqual(studentAverage(), expected);
+// console.log(studentAverage());
+assert.deepStrictEqual(studentAverage(), expected);
