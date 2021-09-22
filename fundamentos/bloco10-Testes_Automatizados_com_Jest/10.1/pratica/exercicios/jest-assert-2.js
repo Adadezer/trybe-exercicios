@@ -7,11 +7,15 @@ Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado */
 
 function myRemove(arr, item) {
   let newArr = [];
-  for (let index = 0; index < arr.length; index += 1) {
-    if (item !== arr[index]) {
-      newArr.push(arr[index]);
-    }
-  }
+  
+  arr.forEach(element => item != element ? newArr.push(element) : element);
   return newArr;
+  // for (let index = 0; index < arr.length; index += 1) {
+  //   if (item !== arr[index]) {
+  //     newArr.push(arr[index]);
+  //   }
+  // }
+  // return newArr;
 }
+
 module.exports = myRemove;
