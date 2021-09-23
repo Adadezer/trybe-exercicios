@@ -1,4 +1,4 @@
-const getUserName = require('../problema/baseExc2e3');
+const { getUserName } = require('../problema/baseExc2e3');
 
 test('faça um teste que verifique o resultado da função getUserName para o caso em que o usuário é encontrado', () => (
   getUserName(1).then((user) => {
