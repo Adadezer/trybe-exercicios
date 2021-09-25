@@ -1,4 +1,4 @@
-const myRemoveWithoutCopy = require('../exercicios/jest-assert-3');
+const myRemoveWithoutCopy = require('../../exercicios/I-jest_assert/jest-assert-3');
 
 describe('A função myRemoveWithoutCopy(arr, item) recebe um array arr e retorna o próprio array sem o elemento item caso ele exista no array', () => {
 

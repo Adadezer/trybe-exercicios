@@ -1,4 +1,4 @@
-const sum = require('../exercicios/jest-assert-1');
+const sum = require('../../exercicios/I-jest_assert/jest-assert-1');
 
 describe('A função sum(a, b) retorna a soma do parâmetro a com o b', () => {
     
