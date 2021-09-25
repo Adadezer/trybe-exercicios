@@ -1,5 +1,4 @@
-const { it, expect } = require('@jest/globals');
-const myRemove = require('../exercicios/jest-assert-2');
+const myRemove = require('../../exercicios/I-jest_assert/jest-assert-2');
 
 describe('A função myRemove(arr, item) recebe um array arr e retorna uma cópia desse array sem o elemento item caso ele exista no array', () => {
 

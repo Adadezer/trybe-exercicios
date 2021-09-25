@@ -1,4 +1,4 @@
-const myFizzBuzz = require('../exercicios/jest-assert-4');
+const myFizzBuzz = require('../../exercicios/I-jest_assert/jest-assert-4');
 
 describe('A função myFizzBuzz(num) recebe um número num e retorna "fizzbuzz" se o número for divisível por 3 e 5 , retorna "fizz" se for divisível apenas por 3 , retorna "buzz" se divisível apenas por 5 , retorna o próprio número caso não seja divisível por 3 ou 5 e retorna false caso num não seja um número', () => {
 
