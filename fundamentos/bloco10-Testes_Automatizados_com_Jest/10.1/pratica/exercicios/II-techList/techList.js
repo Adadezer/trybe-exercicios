@@ -15,4 +15,5 @@ function techList(tecnologias, name) {
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Adadezer'));
 
+// const techList = (tecnologias, name) => tecnologias.length === 0 ? 'Vazio!' : tecnologias.sort().map((tech) => ({tech, name}));
 module.exports = techList;
