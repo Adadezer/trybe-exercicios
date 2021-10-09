@@ -1,0 +1,13 @@
+.cards, h1, footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cards{
+  background-color: rgba(107, 169, 172, 0.137);
+  color: #61dafb;
+  width: 70%;
+  margin-left: 200px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
