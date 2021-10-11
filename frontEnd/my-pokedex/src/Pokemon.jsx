@@ -6,7 +6,7 @@ class Pokemon extends React.Component {
     
     return(
       <div className = 'card'>
-        <div className = 'infomacoes'>
+        <div className = 'informacoes'>
           <p>Nome: {name}</p>
           <p>Tipo: {type}</p>
           <p>Peso: {averageWeight.value} {averageWeight.measurementUnit}</p>
