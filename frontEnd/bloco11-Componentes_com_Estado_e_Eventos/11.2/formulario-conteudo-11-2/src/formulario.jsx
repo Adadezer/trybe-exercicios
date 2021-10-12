@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
+import Tecnologia from './Tecnologia';
+import TextArea from './textArea';
 
 class Formulario extends Component {
   constructor() {
     super();
 
     this.state = {
-      tecnologia: 'react',
+      tecnologia: 'htmlCss',
       idade: 18,
       conhecimento: false,
       textarea: '',
@@ -46,13 +48,7 @@ class Formulario extends Component {
         <h3>Inscreva-se na palestra</h3>
         <form className = 'formPalestra'>
 
-          <label htmlFor = 'tecnologia'>Tecnologia:
-            <select value = {this.state.tecnologia} onChange = {this.handleChange} id = 'tecnologia'> {/* o value da aqui da tag não interfere no value na função, esse  da tag é só pra setar um valor pré definido quando atualizar a pag*/}
-              <option value = 'react'> React </option>
-              <option value = 'javaScript'> Java Script </option>
-              <option value = 'htmlCss'> HTML / CSS </option>
-            </select>
-          </label>
+          <Tecnologia valorPreDef = {this.state.tecnologia} handleChange = {this.handleChange} /> {/* passo via props a função handleChange (chamei essa props de handleChange), tbm passei vi props o value q será usado pra setar um valor pre definido */}
 
           <br /><br />
 
@@ -71,12 +67,7 @@ class Formulario extends Component {
             
             <br /><br />
 
-            <label htmlFor = 'textarea'> descreva resumidamente seus conhecimentos </label> 
-            <br />
-            <textarea cols = '45' rows = '10' id = 'textarea'
-              value = {this.state.textarea} onChange = {this.handleChange}
-            >
-            </textarea>
+            <TextArea valorPreDef = {this.state.textarea} handleChange = {this.handleChange}/>
 
             <br /><br />
 
