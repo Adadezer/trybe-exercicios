@@ -45,7 +45,7 @@ class PersonalDetail extends React.Component {
 
   render() {
     return (
-        
+        // conteudo não terminado
       );
   }
 }
