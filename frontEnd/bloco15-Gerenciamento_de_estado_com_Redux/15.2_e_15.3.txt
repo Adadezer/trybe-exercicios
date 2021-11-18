@@ -1,1 +1,3 @@
 Exercicios do dia 15.2 e 15.3 são forks de outros repositórios
+
+teste commit 
