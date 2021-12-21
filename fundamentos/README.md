@@ -32,4 +32,4 @@ Módulo Introdutório onde são apresentados conceitos ao desenvolvimento web, a
  - [ ] <strong> 04 </strong> : JavaScript - Objetos e funções
 ## Bloco xx
 
- - [ ] 
+ - [x] 
