@@ -20,5 +20,5 @@ Módulo Introdutório onde são apresentados conceitos ao desenvolvimento web, a
 
  - [:heavy_check_mark:] **03:** Fundamentos Desenvolvimento Web
  - [:heavy_check_mark:] **03:** Introdução - Unix & Shell
- - [] **03:** Unix & Bash - Parte 1
- - [] **04:** Unix & Bash - Parte 2
+ - [  ] **03:** Unix & Bash - Parte 1
+ - [  ] **04:** Unix & Bash - Parte 2
