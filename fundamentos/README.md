@@ -40,7 +40,8 @@ Módulo Introdutório onde são apresentados conceitos ao desenvolvimento web, a
  - [x] <strong> 03 </strong> : JavaScript - Eventos
  - [x] <strong> 04 </strong> : JavaScript - Web Storage
 > Projeto - Arte com Pixels
-> Projeto - Lista de tarefas
+
+>Projeto - Lista de tarefas
 
 ## Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
 
