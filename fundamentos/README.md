@@ -30,6 +30,51 @@ Módulo Introdutório onde são apresentados conceitos ao desenvolvimento web, a
  - [ ] <strong> 02 </strong> : JavaScript - Array e loop For
  - [ ] <strong> 03 </strong> : JavaScript - Lógica de Programação e Algoritmos
  - [ ] <strong> 04 </strong> : JavaScript - Objetos e funções
-## Bloco xx
 
- - [x] 
+## Bloco 05: JavaScript: DOM, Eventos e Web Storage
+
+ - [x] <strong> 01 </strong> : JavaScript - DOM e seletores
+ - [x] <strong> 02 </strong> : JavaScript - Trabalhando com elementos
+ - [x] <strong> 03 </strong> : JavaScript - Eventos
+ - [x] <strong> 04 </strong> : JavaScript - Web Storage
+> Projeto - Arte com Pixels
+> Projeto - Lista de tarefas
+
+## Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo
+
+ - [x] <strong> 01 </strong> : HTML & CSS - Forms
+ - [x] <strong> 02 </strong> : Bibliotecas JavaScript e Frameworks CSS
+ - [x] <strong> 03 </strong> : Introdução - CSS Flexbox
+ - [x] <strong> 03 </strong> : CSS Flexbox - Parte 1
+ - [x] <strong> 04 </strong> : CSS Flexbox - Parte 2
+ - [x] <strong> 05 </strong> : CSS Responsivo - Mobile First
+> Projeto - Trybewarts
+
+## Bloco 07: Introdução à JavaScript ES6 e Testes Unitários
+
+ - [x] <strong> 01 </strong> : JavaScript ES6 - let, const, arrow functions e template literals
+ - [x] <strong> 02 </strong> : JavaScript ES6 - Objects
+ - [x] <strong> 03 </strong> : Testes unitários em JavaScript
+> Projeto - JavaScript Testes Unitários
+
+## Bloco 08: Higher Order Functions do JavaScript ES6
+
+ - [x] <strong> 01 </strong> : JavaScript ES6 - Introdução a Higher Order Functions
+ - [x] <strong> 02 </strong> : JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+ - [x] <strong> 03 </strong> : JavaScript ES6 - Higher Order Functions - map e filter
+ - [x] <strong> 04 </strong> : JavaScript ES6 - Higher Order Functions - reduce
+ - [x] <strong> 05 </strong> : JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
+ > Projeto - Zoo functions
+
+## Bloco 9: JavaScript Assíncrono e Promises
+
+ - [x] <strong> 01 </strong> : JavaScript Assíncrono e Callbacks
+ - [x] <strong> 02 </strong> : JavaScript Promises
+ > Projeto - Carrinho de Compras
+
+## Bloco 10-A: Testes automatizados com Jest
+
+- [x] <strong> 01 </strong> Primeiros passos no Jest
+- [x] <strong> 02 </strong> Jest - Testes Assíncronos
+- [x] <strong> 03 </strong> Jest - Simulando comportamentos
+> Projeto - Jest Assíncrono e Mocking
