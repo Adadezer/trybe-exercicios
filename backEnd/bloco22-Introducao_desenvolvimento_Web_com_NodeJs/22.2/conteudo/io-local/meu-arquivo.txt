@@ -1,0 +1,6 @@
+Escola: Trybe
+Curso: Desenvolvimento Web Full-Stack
+Módulo: 3 - backEnd
+Bloco: 22 - Introdução ao desenvolvimento Web com Node.js
+Dia: 2 - Node.js - Fluxo Assíncrono
+Conteudo: Lendo arquivos com métodos síncronos, Lendo arquivos com métodos assíncronos.

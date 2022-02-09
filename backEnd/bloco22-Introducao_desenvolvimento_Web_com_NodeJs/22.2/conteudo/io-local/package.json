@@ -1,0 +1,15 @@
+{
+  "name": "io-local",
+  "version": "1.0.0",
+  "description": "conteudo dia 22.2 - Lendo arquivos com métodos sincronos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "readFileSync",
+    "fs"
+  ],
+  "author": "Adadezer Iwazaki",
+  "license": "ISC"
+}
