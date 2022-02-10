@@ -1,0 +1,14 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "exercicios do dia sobre promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exc1": "node exc1-retornarPromisse.js",
+    "exc2": "node exc2-consumirFuncao.js",
+    "exc3": "node exc3-async_await.js"
+  },
+  "author": "Adadezer Iwazaki",
+  "license": "ISC"
+}
