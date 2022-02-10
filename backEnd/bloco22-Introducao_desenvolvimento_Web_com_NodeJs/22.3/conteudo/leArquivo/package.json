@@ -1,0 +1,17 @@
+{
+  "name": "learquivo",
+  "version": "1.0.0",
+  "description": "conteudo dia 22.3 - teste para função que lê o conteúdo de um arquivo",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/test.js",
+    "start": "index.js"
+  },
+  "author": "Adadezer Iwazaki",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0",
+    "sinon": "^13.0.1"
+  }
+}
