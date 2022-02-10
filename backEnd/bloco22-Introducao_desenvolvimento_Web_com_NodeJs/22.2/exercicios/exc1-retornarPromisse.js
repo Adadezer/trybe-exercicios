@@ -10,7 +10,7 @@
 
 // const fs = require('fs').promises;
 
-const exc1Promisse = ((num1, num2, num3) => {
+const exc1Promise = ((num1, num2, num3) => {
   return new Promise((resolve, reject) => {
     if (typeof num1 !== 'number' || typeof num2 !== 'number' || typeof num3 !== 'number') {
       reject('Informe apenas números');
@@ -31,26 +31,28 @@ const exc1Promisse = ((num1, num2, num3) => {
   });   
 });
 
-exc1Promisse(10, 20, 30)
-  .then((resultado) => {
-    console.log(resultado);
-  })
-  .catch((erro) => {
-    console.error(erro);
-  });
+// exc1Promise(10, 20, 30)
+//   .then((resultado) => {
+//     console.log(resultado);
+//   })
+//   .catch((erro) => {
+//     console.error(erro);
+//   });
 
-exc1Promisse(1, 2, 3)
-.then((resultado) => {
-  console.log(resultado);
-})
-.catch((erro) => {
-  console.error(erro);
-});
+// exc1Promise(1, 2, 3)
+// .then((resultado) => {
+//   console.log(resultado);
+// })
+// .catch((erro) => {
+//   console.error(erro);
+// });
 
-exc1Promisse(1, 2, {})
-  .then((resultado) => {
-    console.log(resultado);
-  })
-  .catch((erro) => {
-    console.error(erro);
-  });
+// exc1Promise(1, 2, {})
+//   .then((resultado) => {
+//     console.log(resultado);
+//   })
+//   .catch((erro) => {
+//     console.error(erro);
+//   });
+
+module.exports = exc1Promise;
