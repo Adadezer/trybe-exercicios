@@ -1,0 +1,16 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "exercicios do dia 22.3 - Mocha, Chai e Sinon - Testes de Back-end com Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/exc3Teste.js",
+    "exc1": "node exc1-numPosNegNeu"
+  },
+  "author": "Adadezer Iwazaki",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0"
+  }
+}
