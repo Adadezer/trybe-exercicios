@@ -4,7 +4,7 @@
   "description": "exercicios do dia 22.3 - Mocha, Chai e Sinon - Testes de Back-end com Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/exc1-testeNumPosNegNeu.js",
+    "test": "mocha tests/exc3Teste.js",
     "exc1": "node exc1-numPosNegNeu"
   },
   "author": "Adadezer Iwazaki",
