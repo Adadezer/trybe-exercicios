@@ -1,0 +1,1 @@
+o exercicio 2 é o código que o teste do exercicio 1 testa
