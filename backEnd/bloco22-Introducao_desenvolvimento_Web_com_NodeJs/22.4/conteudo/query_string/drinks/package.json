@@ -1,0 +1,16 @@
+{
+  "name": "drinks",
+  "version": "1.0.0",
+  "description": "conteudo para fixar query strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Adadezer Iwazaki",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
