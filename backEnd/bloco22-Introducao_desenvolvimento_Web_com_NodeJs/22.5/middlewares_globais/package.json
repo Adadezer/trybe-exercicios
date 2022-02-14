@@ -1,0 +1,16 @@
+{
+  "name": "middlewares_globais",
+  "version": "1.0.0",
+  "description": "conteudo do dia middlewares globais",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "recipes": "nodemon recipes/index.js"
+  },
+  "author": "Adadezer Iwazaki",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
