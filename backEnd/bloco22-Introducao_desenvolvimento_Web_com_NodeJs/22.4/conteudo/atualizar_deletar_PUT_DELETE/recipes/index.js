@@ -52,7 +52,7 @@ app.get('/recipes/:id', function (req, res) {
 // enviando dados no body
 app.post('/recipes', function(req, res){
   const {id, name, price, waitTime} = req.body;
-  // para fixar
+
   recipes.push({ id, name, price, waitTime });
   res.status(201).json({message: 'Recipe created successfully!'});
 });
@@ -83,6 +83,15 @@ app.delete('/recipes/:id', function(req, res){
   res.status(204).end();
 });
 //////////////////////////
+
+/* app.all serve para mapear uma rota que pode ser de qualquer verbo HTTP
+  o valor * é um wildcard , uma expressão coringa que indica que indepedente da rota
+  que chegar aqui ele vai capturar e executar a callback
+*/
+app.all('*', function(req, res){
+  res.status(404).json({message: `Rota '${req.path}', não existe`});
+})
+////////////////////////////////////////////////////////////////////////////////////
 
 app.listen(3001, () => {
   console.log('Aplicação ouvindo na porta 3001');
