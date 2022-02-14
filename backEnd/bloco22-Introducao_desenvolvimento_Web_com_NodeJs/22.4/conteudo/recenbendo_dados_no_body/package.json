@@ -1,0 +1,21 @@
+{
+  "name": "recenbendo_dados_no_body",
+  "version": "1.0.0",
+  "description": "conteudo 22.4 - recebendo dados no body",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "recipes": "nodemon recipes/index.js",
+    "drinks": "nodemon drinks/index.js"
+  },
+  "author": "Adadezer Iwazaki",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.19.1"
+  }
+}
