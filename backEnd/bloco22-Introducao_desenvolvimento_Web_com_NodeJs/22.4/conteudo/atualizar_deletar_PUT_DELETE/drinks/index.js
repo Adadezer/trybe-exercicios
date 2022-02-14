@@ -1,3 +1,9 @@
+/* Para Fixar
+  - Crie uma rota PUT /drinks/:id que permita editar os atributos de uma bebida.
+  - Crie uma rota DELETE /drinks/:id que permita remover uma bebida.
+*/
+
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -55,6 +61,40 @@ app.post('/drinks', (req, resp)=>{
   resp.status(201).json({message: 'Drink adicionado com sucesso!'});
 });
 ////////////////////////
+
+// PUT - atualizar dados
+app.put('/drinks/:id', (req, resp)=> {
+  const { id } = req.params;
+  const { name, price } = req.body;
+
+  const drinkIndex = drinks.findIndex((d)=> d.id === parseInt(id));
+  
+  if(drinkIndex === -1) return resp.status(404).json({message: 'Bebida não encontrada'})
+  
+  drinks[drinkIndex] = {...drinks[drinkIndex], name, price};
+
+  resp.status(204).end()  ;
+});
+////////////////////////
+
+// DELETE - deleta dados
+app.delete('/drinks/:id', (req, resp)=> {
+  const { id } = req.params;
+
+  const drinkIndex = drinks.findIndex((d)=> d.id === parseInt(id));
+  
+  if(drinkIndex === -1) return resp.status(404).json({message: 'Bebida não encontrada'})
+
+  drinks.splice(drinkIndex, 1);
+
+  resp.status(204).end();
+
+});
+////////////////////////
+
+app.all('*', function(req, res){
+  res.status(404).json({message: `Rota '${req.path}', não existe`});
+})
 
 app.listen(3001, ()=> {
   console.log('Aplicação ouvindo na porta 3001');
