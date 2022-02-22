@@ -63,7 +63,7 @@ describe('Ao chamar o controller de create', () => {
         Aqui, todos os testes que requisitarem o serviço, devem receber
         retorno `true`.
       */
-      sinon.stub(MoviesService, 'create').resolves(true);
+      sinon.stub(MoviesService, 'create').resolves({id: 1});
     });
 
     // Restauraremos a função `create` original após os testes.
