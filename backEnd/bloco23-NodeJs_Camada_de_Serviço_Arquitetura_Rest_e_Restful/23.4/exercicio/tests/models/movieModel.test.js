@@ -36,3 +36,42 @@ describe('Insere um novo filme no BD', () => {
 
   });
 });
+
+describe('Retorna o filme com o id passado', () => {
+  describe('caso o filme exista', async () => {
+    
+    before(async () => {
+
+      sinon.stub(MoviesModel, 'getById').resolves({
+        id: 1,
+        title: 'Capitao America',
+        directedBy: 'Marvel Studios',
+        realeaseYear: 2010,
+      })
+    });
+
+    after(() => {
+      MoviesModel.getById.restore();
+    })
+
+    it('retorna um objeto', async () => {
+      const response = await MoviesModel.getById(1);
+  
+      expect(response).to.be.a('object');
+    });
+
+    it('o objeto não pode estar vazio', async () => {
+      const response = await MoviesModel.getById(1);
+
+      expect(response).to.be.not.empty;
+    });
+
+    it(`o objeto retornado possui as propriedades
+    "id", "title", "directedBy", "realeaseYear"`, async () => {
+
+      const response = await MoviesModel.getById(1);
+
+      expect(response).to.include.all.keys('id', 'title', 'directedBy' ,'realeaseYear');
+    });
+  });
+});
