@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       fullName: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       // adicionamos um novo campo 'email' como foi feito no model !
       email: {
@@ -17,11 +17,13 @@ module.exports = {
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        // field: 'created_at', // a coluna será criada no banco com este nome (boas praticas: no banco usamos snake_case, e no js camelCase)
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        // field: 'updated_at', // a coluna será criada no banco com este nome (boas praticas: no banco usamos snake_case, e no js camelCase)
       }
     });
   },
