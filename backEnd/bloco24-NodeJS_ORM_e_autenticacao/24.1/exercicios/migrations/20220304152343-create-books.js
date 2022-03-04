@@ -16,7 +16,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      table: {
+      title: {
         allowNull: true,
         type: Sequelize.STRING
       },
