@@ -15,14 +15,15 @@ module.exports = {
     await queryInterface.bulkInsert('Users',
     [
       {
-        fullname: 'Leonardo',
+        fullName: 'Leonardo',
         email: 'leo@test.com',
         // usamos a função CURRENT_TIMESTAMP do SQL para salvar a data e hora atual nos campos `createdAt` e `updatedAt`Z
+        // com a mudança no nome das colunas, precisamos colocar no seed o formato correspondente a este novo nome
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
         updatedAt: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
       {
-        fullname: 'JEduardo',
+        fullName: 'JEduardo',
         email: 'edu@test.com',
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
         updatedAt: Sequelize.literal('CURRENT_TIMESTAMP'),

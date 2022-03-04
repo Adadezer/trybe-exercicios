@@ -71,7 +71,7 @@ router.put('/:id', async (req, res) => {
       { where: { id } },
     );
 
-    console.log('updateUser: ', updateUser); // confira o que é retornado quando o user com o id é ou não encontrado;
+    // console.log('updateUser: ', updateUser); // confira o que é retornado quando o user com o id é ou não encontrado;
 
     if(!updateUser) return res.status(404).json({ message: 'Usuário não encontrado' });
 
