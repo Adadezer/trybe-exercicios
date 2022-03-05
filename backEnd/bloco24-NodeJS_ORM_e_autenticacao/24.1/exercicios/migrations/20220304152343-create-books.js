@@ -12,7 +12,7 @@ module.exports = {
      await queryInterface.createTable('Books',{
       id: {
         allowNull: false,
-        autoIncremetn: true,
+        autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
@@ -26,11 +26,14 @@ module.exports = {
       },
       pageQuantity: {
         allowNull: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        field: 'page_quantity',
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('now'), // https://stackoverflow.com/questions/20386402/sequelize-unknown-column-createdat-in-field-list
+        field: 'created_at',
       }
     });
   },

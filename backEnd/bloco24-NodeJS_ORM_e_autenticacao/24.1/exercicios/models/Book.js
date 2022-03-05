@@ -6,7 +6,9 @@ const Book = (Sequelize, DataTypes) => {
       createdAt: DataTypes.DATE
     },
     {
-      timestamps: false
+      timestamps: false,
+      underscored: true,
+      tableName: 'Books',
     }
   );
   return Book;
