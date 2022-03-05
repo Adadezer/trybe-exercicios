@@ -23,9 +23,23 @@ const getBookById = async (req, res) => {
 
     res.status(500).json({ message: 'Algo deu errado' });
   }
-} 
+};
+
+const createBook = async (req, res) => {
+  try {
+    const { title, author, pageQuantity } = req.body;
+    const newBook = await Book.create({ title, author, pageQuantity });
+    return res.status(201).json(newBook);
+    
+  } catch (error) {
+    console.log(error.message);
+
+    res.status(500).json({ message: 'Algo deu errado' });
+  }
+};
 
 module.exports = {
   getAllBooks,
   getBookById,
+  createBook,
 }
