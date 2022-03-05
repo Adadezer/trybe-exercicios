@@ -47,7 +47,23 @@ const updateBook = async (req, res) => {
       { where: { id } },
     );
 
-    return res.status(201).json(updateBook);
+    return res.status(200).json(updateBook);
+    
+  } catch (error) {
+    console.log(error.message);
+
+    res.status(500).json({ message: 'Algo deu errado' });
+  }
+};
+
+const deleteBook = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const removeBook = await Book.destroy( // método destroy do Sequelize para remover um usuário no banco.
+      {where: { id }},
+    );
+
+    return res.status(200).json(removeBook);
     
   } catch (error) {
     console.log(error.message);
@@ -61,4 +77,5 @@ module.exports = {
   getBookById,
   createBook,
   updateBook,
+  deleteBook,
 }
