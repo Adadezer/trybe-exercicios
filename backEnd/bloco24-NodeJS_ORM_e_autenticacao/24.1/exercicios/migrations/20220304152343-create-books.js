@@ -25,7 +25,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       pageQuantity: {
-        allowNull: true,
+        allowNull: false,
         type: Sequelize.INTEGER,
         field: 'page_quantity',
       },
