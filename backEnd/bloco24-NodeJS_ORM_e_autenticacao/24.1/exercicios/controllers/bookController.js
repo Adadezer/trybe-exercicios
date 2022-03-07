@@ -2,7 +2,7 @@ const { Book } = require('../models');
 
 const getAllBooks = async (_req, res) => {
   try {
-    const books = await Book.findAll(); // método findAll do Sequelize para retornar todos os livros.
+    const books = await Book.findAll({order: [["title", "ASC"], ["created_at", "ASC"]]}); // método findAll do Sequelize para retornar todos os livros.
     return res.status(200).json(books);
 
   } catch (error) {
