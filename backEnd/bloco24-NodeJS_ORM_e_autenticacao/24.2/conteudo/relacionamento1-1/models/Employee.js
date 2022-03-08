@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Employee.associate = (models) => {
-    Employee.hasOne(models.Address,
+    Employee.hasOne(models.Address, // Employee.hasMany para relacionamentos 1:N (no id 4 ele cria um array de objetos pois esse id tem 2 address)
       { foreignKey: 'employee_id', as: 'addresses' });
   };
 
