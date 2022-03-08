@@ -7,7 +7,7 @@ const app = express();
 app.get('/employees', async (_req, res) => {
   try {
     const employees = await Employee.findAll({
-      include: { model: Address, as: 'addresses' },
+      include: { model: Address, as: 'addresses' }, // model: Address é da importação do model feita na linha 3, as: addresses é o mesmo nome q está no model de Employee.js, na linha 17
     });
 
     return res.status(200).json(employees);
