@@ -1,0 +1,7 @@
+Caso o token seja válido, mas a propriedade `admin` do payload não seja `true`, retorne o status `403 Forbidden` e o seguinte JSON:
+Copiar
+  {
+    "error": {
+      "message": "Restricted access"
+    }
+  }
