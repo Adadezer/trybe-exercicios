@@ -1,0 +1,6 @@
+5. Caso o token seja válido, retorne o status `200 OK` e, no corpo da resposta, o nome de usuário ao qual aquele token pertence e o valor da propriedade `admin`, no seguinte formato:
+Copiar
+  {
+    "username": "nome de usuario do token",
+    "admin": true || false
+  }
