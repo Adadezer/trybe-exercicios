@@ -1,5 +1,7 @@
 Para nao dar algum tipo de conflito, o exercicio de deploy foi feito numa pasta separada
 
+caso precise a pasta está no drive
+
 Os link do exercicio upado são esses:
 
 homolog -> https://adadezer-exc-deploy-251.herokuapp.com/
@@ -7,3 +9,5 @@ homolog -> https://adadezer-exc-deploy-251.herokuapp.com/
 prod -> https://adadezer-exc-deploy-prod-251.herokuapp.com/
 
 heroku-react -> https://exc-deploy-react-251.herokuapp.com/
+
+caso o link nao funcione, verificar se a aplicação existe no heroku, devido a plataforma ter um limite de 5 aplicações upadas, pode ter havido a necessidade de exclui-la para upar outra coisa
