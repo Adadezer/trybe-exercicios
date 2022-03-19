@@ -1,0 +1,11 @@
+os arquivos do submodulo estão no drive
+
+para realizar o exercicio, foram usados o course para consulta, e o vídeo do pedro: https://vimeo.com/689973306/f989651cc9
+
+os links do deploy dos dois repositorios são esses:
+
+acordar primeiro o back: https://back-252.herokuapp.com/users
+front -> https://front-exc252.herokuapp.com/
+
+caso o link nao nao funcione, verificar se a aplicação existe no heroku, devido a plataforma ter um limite de 5 aplicações upadas, pode ter havido a necessidade de exclui-la para upar outra coisa
+
