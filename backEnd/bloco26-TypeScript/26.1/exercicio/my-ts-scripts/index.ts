@@ -2,6 +2,7 @@ import * as length from './length';
 import * as mass from './mass';
 import * as capacity from './capacity';
 import * as area from './area';
+import * as volume from './volume';
 
 console.log('---- 1 -----');
 console.log(`1 Quilômetro tem ${length.convert(1, 'km', 'm')}m`);
@@ -41,4 +42,14 @@ console.log(`1 Metro quadrado tem ${area.convert(1, 'm', 'm')}m²`);
 console.log(`1 Decímetro quadrado tem ${area.convert(1, 'dm', 'm')}m²`);
 console.log(`1 Centímetro quadrado tem ${area.convert(1, 'cm', 'm')}m²`);
 console.log(`1 Milímetro quadrado tem ${area.convert(1, 'mm', 'm')}m²`);
+console.log();
+
+console.log('---- 5 -----');
+console.log(`1 Quilômetro cúbico tem ${volume.convert(1, 'km', 'm')}m³`);
+console.log(`1 Hectômetro cúbico tem ${volume.convert(1, 'hm', 'm')}m³`);
+console.log(`1 Decâmetro cúbico tem ${volume.convert(1, 'dam', 'm')}m³`);
+console.log(`1 Metro cúbico tem ${volume.convert(1, 'm', 'm')}m³`);
+console.log(`1 Decímetro cúbico tem ${volume.convert(1, 'dm', 'm')}m³`);
+console.log(`1 Centímetro cúbico tem ${volume.convert(1, 'cm', 'm')}m³`);
+console.log(`1 Milímetro cúbico tem ${volume.convert(1, 'mm', 'm')}m³`);
 console.log();
