@@ -1,3 +1,5 @@
+// Crie um type para um objeto que represente um pássaro.
+
 type passaro = {
   pena: boolean;
   bico: boolean;
