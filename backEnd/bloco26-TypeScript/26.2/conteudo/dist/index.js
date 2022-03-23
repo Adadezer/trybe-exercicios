@@ -25,6 +25,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeAlias = __importStar(require("./typeAlias"));
 const typeUnion = __importStar(require("./typeUnion"));
+const classes = __importStar(require("./classes"));
 console.log('------- Type Alias ----------');
 console.log(`tem asas, pena, e bico: ${typeAlias.itsBird({ pena: true, bico: true, asas: true })}`);
 console.log(`tem asas, mas não tem pena, nem bico: ${typeAlias.itsBird({ pena: false, bico: false, asas: true })}`);
@@ -41,4 +42,14 @@ console.log(`o CPF pode ser em formato numero: ${typeUnion.retornaCPF(1235678901
 console.log();
 console.log(`o sistema operacinal é: ${typeUnion.sistemasOperacionais('linux')}`);
 console.log();
-console.log(`Qual a primeira vogal do seu nome?  ${typeUnion.vogais('A')}`);
+console.log(`Qual a primeira vogal do seu nome? ${typeUnion.vogais('A')}`);
+console.log();
+console.log('------- Classes ----------');
+classes.cachorro1.latir();
+classes.cachorro2.latir();
+console.log();
+classes.casa1.informar();
+classes.casa2.informar();
+console.log();
+classes.voo1.infoVoo();
+classes.voo2.infoVoo();
