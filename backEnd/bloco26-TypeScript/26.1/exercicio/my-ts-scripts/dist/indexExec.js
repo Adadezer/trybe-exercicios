@@ -23,11 +23,5 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const conversoes = __importStar(require("./length"));
-console.log(`1 Quilômetro tem ${conversoes.convert(1, 'km', 'm')}m`);
-console.log(`1 Hectômetro tem ${conversoes.convert(1, 'hm', 'm')}m`);
-console.log(`1 Decâmetro tem ${conversoes.convert(1, 'dam', 'm')}m`);
-console.log(`1 Metro tem ${conversoes.convert(1, 'm', 'm')}m`);
-console.log(`1 Decímetro tem ${conversoes.convert(1, 'dm', 'm')}m`);
-console.log(`1 Centímetro tem ${conversoes.convert(1, 'cm', 'm')}m`);
-console.log(`1 Milímetro tem ${conversoes.convert(1, 'mm', 'm')}m`);
+const execLength = __importStar(require("./exec"));
+execLength.execLength();
