@@ -1,6 +1,7 @@
 import * as typeAlias from './typeAlias';
 import * as typeUnion from './typeUnion';
 import * as classes from './classes';
+import * as interfaces from './interface';
 
 console.log('------- Type Alias ----------');
 console.log(`tem asas, pena, e bico: ${typeAlias.itsBird({pena: true, bico: true, asas: true})}`);
@@ -38,3 +39,9 @@ console.log();
 
 classes.voo1.infoVoo();
 classes.voo2.infoVoo();
+console.log();
+
+console.log('------- Interfaces ----------');
+console.log(`${interfaces.carro.ligar()}`);
+console.log(`${interfaces.leao.rugir()}`);
+console.log(`${interfaces.aviao.decolar()}`);
