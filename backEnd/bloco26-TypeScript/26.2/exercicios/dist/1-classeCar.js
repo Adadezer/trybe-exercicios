@@ -47,31 +47,31 @@ class Car {
         this._doors = doors;
     }
     honk() {
-        console.log(`O carro buzinou`);
+        return 'O carro buzinou';
     }
     openTheDoor(porta) {
-        console.log(`abriu a porta ${porta}`);
+        return `abriu a porta ${porta}`;
     }
     closeTheDoor(porta) {
-        console.log(`fechou a porta ${porta}`);
+        return `fechou a porta ${porta}`;
     }
     turnOn() {
-        console.log(`ligou o carro`);
+        return `ligou o carro`;
     }
     turnOff() {
-        console.log(`desligou o carro`);
+        return `desligou o carro`;
     }
     speedUp() {
-        console.log(`aumentou a velocidade do carro`);
+        return `aumentou a velocidade do carro`;
     }
     speedDown() {
-        console.log(`diminuiu a velociade do carro`);
+        return `diminuiu a velociade do carro`;
     }
     stop() {
-        console.log(`parou o carro`);
+        return `parou o carro`;
     }
     turn(direcao) {
-        console.log(`o carro virou ${direcao}`);
+        return `${direcao}`;
     }
 }
 exports.Car = Car;
