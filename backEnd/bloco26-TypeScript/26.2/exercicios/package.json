@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tsc && node ./dist/index.js",
-    "exc2": "npx tsc && node ./dist/2-scriptExc1.js"
+    "exc2": "npx tsc && node ./dist/2-scriptExc1.js",
+    "exc3": "npx tsc && node ./dist/indexInterface.js"
   },
   "keywords": [],
   "author": "",
