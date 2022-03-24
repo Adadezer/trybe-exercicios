@@ -12,5 +12,11 @@
   "devDependencies": {
     "@tsconfig/node14": "^1.0.1",
     "@types/node": "^17.0.22"
+  },
+  "dependencies": {
+    "@types/readline-sync": "^1.4.4",
+    "dotenv": "^16.0.0",
+    "mysql2": "^2.3.3",
+    "readline-sync": "^1.4.10"
   }
 }
