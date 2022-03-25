@@ -3,6 +3,8 @@
 import { Request, Response } from 'express';
 import { StatusCodes } from 'http-status-codes';
 
+import Book from "../interfaces/book.interface";
+
 import BookService from '../services/books.service';
 
 class BooksController {
@@ -23,6 +25,18 @@ class BooksController {
     }
 
     res.status(StatusCodes.OK).json(book);
+  }
+
+  public async create(req: Request, res: Response) {
+    const book = this.buildBookByParams(req.body);
+
+    const bookCreated = await this.bookService.create(book);
+    res.status(StatusCodes.CREATED).json(bookCreated);
+  }
+
+  private buildBookByParams(params: any): Book {
+    const { title, price, author, isbn } = params;
+    return { title, price, author, isbn } as Book;
   }
 }
 
