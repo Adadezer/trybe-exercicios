@@ -42,6 +42,13 @@ class BooksController {
     res.status(StatusCodes.NO_CONTENT).end();
   }
 
+  public async remove(req: Request, res: Response) {
+    const id = parseInt(req.params.id);
+    await this.bookService.remove(id);
+
+    res.status(StatusCodes.NO_CONTENT).end();
+  }
+
   private buildBookByParams(params: any): Book {
     const { title, price, author, isbn } = params;
     return { title, price, author, isbn } as Book;
