@@ -4,16 +4,16 @@
   Crie uma pizza sabor Nutela de 4 fatias;
 */
 
-import pizza from './3-interface';
+import { Pizza } from './3-interface';
 
-const calabresa: pizza = {
+const calabresa: Pizza = {
     flavor: "Calabresa",
     slices: 8
 }
 
 console.log(calabresa);
 
-const marguerita: pizza = {
+const marguerita: Pizza = {
     flavor: "Marguerita",
     slices: 6
 }
@@ -21,7 +21,7 @@ const marguerita: pizza = {
 console.log(marguerita);
 
 
-const nutela: pizza = {
+const nutela: Pizza = {
     flavor: "Nutela",
     slices: 4
 }
