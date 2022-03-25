@@ -34,6 +34,14 @@ class BooksController {
     res.status(StatusCodes.CREATED).json(bookCreated);
   }
 
+  public async update(req: Request, res: Response) {
+    const id = parseInt(req.params.id);
+    const book = this.buildBookByParams(req.body);
+    await this.bookService.update(id, book);
+
+    res.status(StatusCodes.NO_CONTENT).end();
+  }
+
   private buildBookByParams(params: any): Book {
     const { title, price, author, isbn } = params;
     return { title, price, author, isbn } as Book;
@@ -41,6 +49,10 @@ class BooksController {
 }
 
 export default BooksController;
+// export default new BooksController();
+
+
+
 
 // usar arrow function (por enquanto para rodar)
 
