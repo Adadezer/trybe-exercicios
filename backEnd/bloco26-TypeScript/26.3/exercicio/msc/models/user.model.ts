@@ -13,6 +13,13 @@ class UsersModel {
     const [ rows ] = result;
     return rows as User[];
   }
+
+  public async getById(id: number): Promise<User> {
+    const result = await this._connection.execute('SELECT * FROM Users WHERE id = ?', [id]);
+    const [ rows ] = result;
+    const [ user ] = rows as User[];
+    return user;
+  }
 }
 
 export default UsersModel
