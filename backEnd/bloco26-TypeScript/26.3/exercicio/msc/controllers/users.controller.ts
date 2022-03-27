@@ -3,6 +3,8 @@ import { StatusCodes } from 'http-status-codes';
 
 import UserService from '../services/users.service';
 
+import User from '../../interfaces/user.interface';
+
 class UsersController {
   userService = new UserService();
   
@@ -20,6 +22,19 @@ class UsersController {
     }
 
     res.status(StatusCodes.OK).json(user); 
+  }
+
+  private buildUserByParams(params: any): User {
+    const { nome, senha, email } = params;
+    return { nome, senha, email } as User;
+  }
+
+  public async create(req: Request, res: Response) {
+    const user = this.buildUserByParams(req.body);
+
+    const userCreated = await this.userService.create(user);
+
+    res.status(StatusCodes.CREATED).json(userCreated);
   }
 }
 
