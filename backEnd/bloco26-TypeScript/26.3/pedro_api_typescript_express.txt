@@ -1,0 +1,6 @@
+Vídeo demonstrando a construção de uma API em Typescript com express
+
+https://vimeo.com/693316710/8d9b4844d0
+
+
+Repositório github: https://github.com/tryber/sd-015-a-live-lectures/tree/revisao-ts
