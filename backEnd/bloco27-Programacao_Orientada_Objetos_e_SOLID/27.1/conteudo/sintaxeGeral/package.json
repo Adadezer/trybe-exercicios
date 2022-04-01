@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tv": "npx tsc && node ./dist/classeTV",
-    "dev": "tsnd classeTV"
+    "tv": "npx tsc && node ./dist/sintaxe_geral/classeTV",
+    "dev": "tsnd sintaxe_geral/classeTV"
   },
   "keywords": [],
   "author": "",
