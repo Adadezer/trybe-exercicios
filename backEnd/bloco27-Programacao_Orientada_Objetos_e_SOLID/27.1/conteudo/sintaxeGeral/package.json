@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tv": "npx tsc && node ./dist/sintaxe_geral/classeTV",
-    "dev": "tsnd sintaxe_geral/classeTV"
+    "sinGeral": "npx tsc && node ./dist/sintaxe_geral/classeTV",
+    "sinEncap": "npx tsc && node ./dist/encapsulamento/sintaxeEncap",
+    "dev": "tsnd encapsulamento/sintaxeEncap"
   },
   "keywords": [],
   "author": "",
