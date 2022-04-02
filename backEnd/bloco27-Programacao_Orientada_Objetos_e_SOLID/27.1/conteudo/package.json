@@ -8,7 +8,8 @@
     "sinGeral": "npx tsc && node ./dist/sintaxe_geral/classeTV",
     "sinEncap": "npx tsc && node ./dist/encapsulamento/sintaxeEncap",
     "tvEncap": "npx tsc && node ./dist/encapsulamento/tvEncap",
-    "dev": "tsnd encapsulamento/tvEncap"
+    "email": "npx tsc && node ./dist/problematizacao",
+    "dev": "tsnd problematizacao"
   },
   "keywords": [],
   "author": "",
