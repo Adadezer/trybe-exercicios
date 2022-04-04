@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sinGeral": "npx tsc && node ./dist/sintaxe_geral/classeTV",
-    "dev": "tsnd problematizacao"
+    "exc1": "npx tsc && node ./dist/exc1-Estudantes",
+    "dev1": "tsnd exc1-Estudantes"
   },
   "keywords": [],
   "author": "",
