@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "exc1": "npx tsc && node ./dist/exc1-Estudantes",
-    "dev1": "tsnd exc1-Estudantes"
+    "exc1": "npx tsc && node ./dist/estudantes",
+    "dev1": "tsnd estudantes"
   },
   "keywords": [],
   "author": "",
