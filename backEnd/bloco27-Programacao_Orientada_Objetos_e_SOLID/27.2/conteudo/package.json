@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "superClass": "npx tsc && node ./dist/sintaxe_geral/superClass",
     "refSuper": "npx tsc && node ./dist/sintaxe_geral/referenciaSuper",
-    "dev": "tsnd sintaxe_geral/referenciaSuper"
+    "interface": "npx tsc && node ./dist/implementando_interfaces/myInterface",
+    "dev": "tsnd implementando_interfaces/myInterface"
   },
   "keywords": [],
   "author": "",
