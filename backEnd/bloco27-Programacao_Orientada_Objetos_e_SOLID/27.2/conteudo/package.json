@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "superClass": "npx tsc && node ./dist/sintaxe_geral/superClass",
+    "refSuper": "npx tsc && node ./dist/sintaxe_geral/referenciaSuper",
+    "dev": "tsnd sintaxe_geral/referenciaSuper"
   },
   "keywords": [],
   "author": "",
