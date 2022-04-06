@@ -9,7 +9,8 @@
     "refSuper": "npx tsc && node ./dist/sintaxe_geral/referenciaSuper",
     "interface": "npx tsc && node ./dist/implementando_interfaces/myInterface",
     "logger": "npx tsc && node ./dist/composicao/logger",
-    "dev": "tsnd composicao/logger"
+    "problematizacao": "npx tsc && node ./dist/problematizacao",
+    "dev": "tsnd problematizacao"
   },
   "keywords": [],
   "author": "",
