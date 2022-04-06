@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "smashBros": "npx tsc && node ./dist/sintaxe_com_classes/superSmashBros",
+    "char": "npx tsc && node ./dist/sintaxe_com_interface_e_generics/character",
+    "dev": "tsnd sintaxe_com_interface_e_generics/character"
   },
   "keywords": [],
   "author": "",
