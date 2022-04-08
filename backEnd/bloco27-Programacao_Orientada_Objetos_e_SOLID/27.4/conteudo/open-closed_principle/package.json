@@ -1,13 +1,12 @@
 {
-  "name": "single_responsibility_principle",
+  "name": "open-closed_principle",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha -r ts-node/register ./tests/**/*.{test,spec}.{t,j}s",
     "lint": "eslint  -c .eslintrc.json src/**/*.{t,j}s",
-    "dev": "tsnd praFixar/ReadingTracker",
-    "wishList": "tsnd praFixar/Books"
+    "dev": "tsnd paraFixar/notification"
   },
   "keywords": [],
   "author": "",
