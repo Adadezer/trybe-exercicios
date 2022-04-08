@@ -9,7 +9,7 @@ interface Notificator {
 
 class ConsoleNotification implements Notificator {
   sendNotification(message: string) {
-    console.log(`Here we go again! - ${message}`);
+    console.log(`Aqui vamos nós novamente! - ${message}`);
   }
 }
 
@@ -20,7 +20,7 @@ class EmailNotification implements Notificator {
   }
   sendNotification(message: string) {
     console.log(
-      `Here should go the implementation to send notification to the email: ${this.email} - ${message}`
+      `Aqui deve ir a implementação para enviar a notificação para o e-mail: ${this.email} - ${message}`
     );
   }
 }
@@ -32,7 +32,7 @@ class PhoneNotification implements Notificator {
   }
   sendNotification(message: string) {
     console.log(
-      `Here should go the implementation to send notification to the phone ${this.phone} - ${message}`
+      `Aqui deve ir a implementação para enviar a notificação para o phone ${this.phone} - ${message}`
     );
   }
 }
@@ -51,12 +51,19 @@ export class ReadingTracker {
     this.booksRead += readsCount;
     if (this.booksRead >= this.readingGoal) {
       this.notificator.sendNotification(
-        "Congratulations! You've reached your reading goal!"
+        "Parabéns! Você atingiu sua meta de leitura!"
       )
       return;
     }
-    this.notificator.sendNotification("There are still some books to go!");
+    this.notificator.sendNotification("Ainda faltam alguns livros!");
   }
 
   // Aqui viriam mais métodos, que fogem o escopo deste exercício 
 }
+
+const noticacaoEmail = new ReadingTracker(10, new EmailNotification('email@email.com'));
+noticacaoEmail.trackReadings(5);
+
+const noticacaoPhone = new ReadingTracker(10, new PhoneNotification(11945269877));
+noticacaoPhone.trackReadings(15);
+
