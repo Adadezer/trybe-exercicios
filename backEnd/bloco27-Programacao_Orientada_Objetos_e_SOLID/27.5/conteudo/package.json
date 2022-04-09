@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "liskov": "npx ts-node ./liskov/src"
+    "liskov": "npx ts-node ./liskov/src",
+    "iSegregation": "npx ts-node ./Interface_segregation/src"
   },
   "keywords": [],
   "author": "",
