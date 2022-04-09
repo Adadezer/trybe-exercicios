@@ -1,13 +1,16 @@
-// import Person from './person';
+import Person from './person';
 import Student from './student';
 import Employee from './employee';
+import Subject from './subject';
 
-// const pessoa1 = new Person('João', new Date('1995/06/15'));
-// const pessoa2 = new Person('Maria', new Date('2005/09/07'));
+// exercicio 1 - Para testar crie pelo menos duas pessoas.
+const pessoa1 = new Person('Jhonny', new Date('2005/05/21'));
+const pessoa2 = new Person('Jhenny', new Date('1993/06/15'));
 
-// console.log(pessoa1);
-// console.log(pessoa2);
+console.log(pessoa1);
+console.log(pessoa2);
 
+// exercicio 2 - Para testar, crie pelo menos 5 pessoas estudantes.
 const Joao = new Student('João', new Date('1994/06/15'));
 // console.log('Joao: ', Joao);
 Joao.examsGrades = [10, 6, 7, 5];
@@ -39,6 +42,7 @@ Joaquim.worksGrades = [0, 0];
 console.log('Joaquim: ', Joaquim);
 console.log('soma grades: ', Joaquim.sumGrades());
 
+// exercicio 3 - teste Employee
 const testeEmployee: Employee = {
   registration: 'regEmployee' + Math.floor(Math.random() * ( 10000 - 0) + 0), // Math.random() * (max - min) + min
   salary: 3000,
@@ -50,3 +54,13 @@ const testeEmployee: Employee = {
 
 console.log(testeEmployee);
 console.log('generateRegistration: ', testeEmployee.generateRegistration());
+
+// exercicio 4 - Para testar crie as disciplinas Matemática, História, Filosofia.
+const matematica = new Subject('Matamática');
+const historia = new Subject('História');
+const filosofia = new Subject('Filosofia');
+
+console.log(matematica);
+console.log(historia);
+console.log(filosofia);
+
