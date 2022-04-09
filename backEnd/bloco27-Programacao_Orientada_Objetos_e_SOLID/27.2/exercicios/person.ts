@@ -6,7 +6,7 @@ export default class Person {
 
   constructor(name: string, birthDate: Date) {
     this.name = name;
-    this.age = birthDate;
+    this.birthDate = birthDate;
   }
 
   get name(): string {
@@ -19,7 +19,7 @@ export default class Person {
     this._name = value;
   }
 
-  get age() {
+  get birthDate() {
     return this._birthDate
   }
 
@@ -29,7 +29,7 @@ export default class Person {
     return Math.floor(diff / yearMs);
   }
 
-  set age(value: Date) {
+  set birthDate(value: Date) {
     if (value.getTime() > new Date().getTime()) {
       throw new Error('A data de nascimento não pode ser uma data no futuro.');
     }
