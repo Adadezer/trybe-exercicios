@@ -1,5 +1,6 @@
 // import Person from './person';
 import Student from './student';
+import Employee from './employee';
 
 // const pessoa1 = new Person('João', new Date('1995/06/15'));
 // const pessoa2 = new Person('Maria', new Date('2005/09/07'));
@@ -37,3 +38,15 @@ Joaquim.examsGrades = [7, 6, 7, 5];
 Joaquim.worksGrades = [0, 0];
 console.log('Joaquim: ', Joaquim);
 console.log('soma grades: ', Joaquim.sumGrades());
+
+const testeEmployee: Employee = {
+  registration: 'regEmployee' + Math.floor(Math.random() * ( 10000 - 0) + 0), // Math.random() * (max - min) + min
+  salary: 3000,
+  admissionDate: new Date(),
+  generateRegistration(): string{
+    return 'regEmployee' + Math.floor(Math.random() * ( 10000 - 0) + 0) // Math.random() * (max - min) + min
+  }
+}
+
+console.log(testeEmployee);
+console.log('generateRegistration: ', testeEmployee.generateRegistration());
