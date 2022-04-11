@@ -1,14 +1,16 @@
 // Exercício 2 : Refatore nossa classe de pessoa estudante para que ela herde da nossa classe pessoa.
 
 import Person from "./person";
+import Enrollable from './enrollable';
 
-export default class Student extends Person {
+export default class Student extends Person implements Enrollable{
   private _enrollment!: string; // matricula  // private _enrollment: string = String();
   private _examsGrades: number[] = []; // notas de provas
   private _worksGrades: number[] = []; // notas de trabalhos
 
   constructor(name: string, birthDate: Date) {
     super(name, birthDate);
+    
     this.enrollment = this.generateEnrollment();
   }
 
@@ -55,5 +57,12 @@ export default class Student extends Person {
     const works = this._worksGrades.reduce((curr, acc) => {return curr + acc}, 0);
     const sum = exams + works;
     return sum;
+  }
+
+  sumAverageGrade(): number {
+    const sumGrades = this.sumGrades();
+    const divider = this.examsGrades.length + this.worksGrades.length;
+
+    return Math.round(sumGrades / divider); // Math.round() arredonda o valor para o inteiro mais proximo
   }
 }
