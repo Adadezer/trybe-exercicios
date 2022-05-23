@@ -16,7 +16,10 @@ export interface IBook {
 */
 
 export const BookSchema = new Schema<IBook>({
-  title: { type: String, required: true },
-  author: { type: String, required: true },
-  publishedYear: { type: Number, required: false },
-  weight: { type: String, required: false }});
+    title: { type: String, required: true },
+    author: { type: String, required: true },
+    publishedYear: { type: Number, required: false },
+    weight: { type: String, required: false }
+  },
+  {versionKey: false} // a version key serve para fazer um versionamento do documento, se true, mostra na resposta aparece na chave __v
+);

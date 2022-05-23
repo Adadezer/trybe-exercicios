@@ -15,6 +15,11 @@ class BookModel {
     const books = await this.bookModel.find();
     return books;
   }
+
+  public async createBook(bookData: object): Promise<IBook> {
+    const book = await this.bookModel.create(bookData);
+    return book;
+  }
 }
 
 // Para Fixar
