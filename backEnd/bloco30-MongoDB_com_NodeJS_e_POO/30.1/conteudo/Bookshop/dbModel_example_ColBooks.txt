@@ -1,3 +1,5 @@
+Obs: Esse banco insere informações de livros, na seção Criando uma conexão no mongoDB com o Mongoose, no course
+
 use model_example
 db.books.insertMany([
   { "title": "A Game of Thrones", "author": "George R. R. Martin" },
@@ -8,3 +10,15 @@ db.books.insertMany([
   { "title": "The Lord of The Rings - The Return of The King", "author": "J. R. R. Tolkien" },
   { "title": "Foundation", "author": "Isaac Asimov" }
 ])
+
+
+Obs: Esse banco insere informações de livros, foi tirado da parte de conteudo do dia 30.1, na seção Reestruturando a aplicação. Diferente das informações inseridas na seção Criando uma conexão no mongoDB com o Mongoose.
+
+use model_example
+db.books.insertMany([
+  { title: 'The Dispossessed', author: 'Ursula K. Le Guin', publishedYear: 1974 },
+  { title: 'I Am Legend', author: 'Richard Matheson', publishedYear: 1954, weight: '6.4 ounces' },
+  { title: 'The Road', author: 'Cormac McCarthy', publishedYear: 2006 },
+  { title: 'Foundation', author: 'Isaac Asimov' },
+  { title: '2001: A Space Odyssey', author: 'Arthur C. Clarke', weight: '5.4 ounces' },
+]);
