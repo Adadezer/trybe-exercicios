@@ -2,6 +2,7 @@
 
 import { model as createModel } from 'mongoose';
 import { BookSchema, IBook } from '../schemas/BookSchema';
+import { MovieSchema, IMovie } from '../schemas/MovieSchema';
 
 class BookModel {
   /*
@@ -16,4 +17,17 @@ class BookModel {
   }
 }
 
-export default BookModel;
+// Para Fixar
+class MovieModel {
+  constructor(private movieModel = createModel<IMovie>('movies', MovieSchema)) {}
+
+  public async getAll(): Promise<IMovie[]> {
+    const movies = await this.movieModel.find();
+    return movies;
+  }
+}
+
+export {
+  BookModel,
+  MovieModel
+}
