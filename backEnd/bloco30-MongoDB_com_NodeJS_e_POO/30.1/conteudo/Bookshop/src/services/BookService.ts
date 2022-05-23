@@ -27,10 +27,10 @@ class BookService {
     return data;
   }
 
-  // public async deleteBook(id: string): Promise<IBook | null> {
-  //   const data = await this.bookModel.deleteBook(id);
-  //   return data;
-  // }
+  public async deleteBook(id: string): Promise<IBook | null> {
+    const data = await this.bookModel.deleteBook(id);
+    return data;
+  }
 }
 
 // Para Fixar

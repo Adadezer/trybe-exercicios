@@ -34,6 +34,11 @@ class BookModel {
     );
     return book;
   }
+
+  public async deleteBook(id: string): Promise<IBook | null> {
+    const book = await this.bookModel.findOneAndDelete({ _id: id });
+    return book;
+  }
 }
 
 // Para Fixar
