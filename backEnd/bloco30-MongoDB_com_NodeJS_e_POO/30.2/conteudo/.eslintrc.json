@@ -56,11 +56,11 @@
     ],
     "object-curly-newline": "off",
     "max-params": [
-      "error",
+      "error"
 
     ],
     "max-lines": [
-      "error",
+      "error"
 
     ],
     "max-lines-per-function": [
@@ -81,14 +81,14 @@
       }
     ],
     "complexity": [
-      "error",
+      "error"
 
     ],
     "import/no-extraneous-dependencies": [
       "off"
     ],
     "sonarjs/cognitive-complexity": [
-      "error",
+      "error"
 
     ],
     "sonarjs/no-one-iteration-loop": [
