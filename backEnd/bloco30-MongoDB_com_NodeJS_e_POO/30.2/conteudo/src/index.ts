@@ -21,3 +21,5 @@ server.addRouter(lensRouter.router);
 server.addRouter(frameRouter.router);
 
 server.startServer();
+
+// NÃO ESTÁ FUNCIONANDO PORQUE NÃO TEM BANCO, E DA ERRO DE AUTENTICAÇÃO
