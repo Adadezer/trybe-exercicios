@@ -43,7 +43,7 @@ class Liquidificador(Eletrodomestico): # Exemplo de Herança
         Liquidificador:
         -Preço: {self.preco}
         """
-
+    # por causa do encapsulamento os atributos são privados, só preço é publico e pode ser acessado nas classes filhas
 
 class Geladeira(Eletrodomestico):
     def __init__(self, cor, potencia, voltagem, preco, quantidade_de_portas=1):
@@ -62,7 +62,7 @@ class Pessoa:
     def comprar_eletrodomestico(self, eletrodomestico: Eletrodomestico):
         if eletrodomestico.preco <= self.saldo_na_conta:
             self.saldo_na_conta -= eletrodomestico.preco
-            self.eletrodomestico.append(eletrodomestico)
+            self.eletrodomesticos.append(eletrodomestico)
 
     def __str__(self):
         return f"""
@@ -87,7 +87,7 @@ class Fogao(Eletrodomestico):
 
         self.quantidade_de_bocas = quantidade_de_bocas
 
-cliente = Pessoa("Adadezer", 5)
+cliente = Pessoa("Adadezer", 5000)
 eletrodomestico = Eletrodomestico("Preto", 500, 220, 50)
 liquidificador = Liquidificador("Preto", 550, 110, 110)
 geladeira = Geladeira("Prata", 104, 220, 3000)
@@ -95,9 +95,11 @@ microondas = Microondas("Prata", 1000, 110, 480)
 batedeira = Batedeira("Preto", 500, 220, 200)
 fogao = Fogao("Preto", 2000, 220, 790)
 cliente.comprar_eletrodomestico(liquidificador)
-# cliente.comprar_eletrodomestico(geladeira)
-# cliente.comprar_eletrodomestico(microondas)
-# cliente.comprar_eletrodomestico(batedeira)
-# cliente.comprar_eletrodomestico(fogao)
+cliente.comprar_eletrodomestico(geladeira)
+cliente.comprar_eletrodomestico(microondas)
+cliente.comprar_eletrodomestico(batedeira)
+cliente.comprar_eletrodomestico(fogao)
 
+print(eletrodomestico)
+# print(liquidificador)
 print(cliente)
