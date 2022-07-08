@@ -61,15 +61,12 @@ class DecoratedCalculator:
 
 if __name__ == "__main__":
     calculadora = Calculadora()
+    
     print("10 + 20 =", calculadora.soma(10, 20))
 
     calculadoraDecorada = CalculadoraDecorada(calculadora)
 
-    decoratedCalculator = DecoratedCalculator(calculadora)
-    
     print("'oito' + 'dois' =", calculadoraDecorada.soma("oito", "dois"))
-
-    print("'seven' + 'one' =", decoratedCalculator.sum("seven", "one"))
 
 # ▶️ Em resumo, com o Padrão Decorator é possível adicionar ou remover comportamentos dos objetos de forma dinâmica, sem o risco de precisar alterar códigos já testados.
 
@@ -79,6 +76,8 @@ if __name__ == "__main__":
 # Crie uma segunda classe decorator que contemple os números em inglês:
 # "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"
 
-# (a resolução está acima)
+decoratedCalculator = DecoratedCalculator(calculadora)
 
+print("'seven' + 'one' =", decoratedCalculator.sum("seven", "one"))
 
+# (a implementação da classe está acima)
