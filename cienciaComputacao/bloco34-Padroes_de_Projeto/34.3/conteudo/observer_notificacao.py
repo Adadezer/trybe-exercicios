@@ -14,6 +14,10 @@ class Perfil:
     def adicionar_sistema_de_notificacao(self, sistema):
         self.__sistemas_de_notificacao.append(sistema)
 
+    # Exc. Fixação
+    def remover_sistema_de_notificacao(self, sistema):
+        self.__sistemas_de_notificacao.remove(sistema)
+
     def notificar_todos(self):
         for sistema in self.__sistemas_de_notificacao:
             sistema.notificar()
@@ -63,6 +67,8 @@ class NotificadorEmail(Notificador):
         self.perfil = perfil
         self.seguidores = seguidores
         self.perfil.adicionar_sistema_de_notificacao(self)
+        # Exc. Fixação
+        self.perfil.remover_sistema_de_notificacao(self)
 
     def notificar(self):
         print(f"Disparando Email's para: {self.seguidores}")
@@ -88,3 +94,10 @@ if __name__ == "__main__":
     NotificadorEmail(meuPerfil, seguidores_email)
 
     meuPerfil.adicionar_post("Olá universo da programação!")
+
+
+# 4️⃣ Podemos perceber que apenas o uso de meuPerfil.adicionar_post() é suficiente para realizar as notificações. Inclusive ainda podemos notificar as pessoas seguidoras a qualquer momento chamando diretamente meuPerfil.notificar_todos(). Isso é interessante, pois podemos ativar/desativar as formas de notificação apenas alterando um bloco parcial de código, sem precisar alterar o método notificar_todos(). Esta facilidade é conhecida como baixo acoplamento e facilita muito as manutenções futuras.
+
+# EXERCICIO DE FIXAÇÃO
+
+# No exemplo acima, temos o código adicionar_sistema_de_notificacao, que adiciona um sistema de notificação. Porém, imagine que o serviço de email esteja indisponível. Nesse sentido, implemente o método remover_sistema_de_notificacao, que deve realizar um remove na lista de sistemas.
