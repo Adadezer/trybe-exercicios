@@ -8,15 +8,17 @@ O currículo da Trybe foi desenhado em parceria com as maiores empresas de tecno
 
 
 
+
 |   Módulo 1: Fundamentos do Desenvolvimento Web  |           Módulo 2: Desenvolvimento Front-end           |            Módulo 3: Desenvolvimento Back-end           | Módulo 4: Ciência da Computação |
 |:-----------------------------------------------:|:-------------------------------------------------------:|:-------------------------------------------------------:|:-------------------------------:|
-|                   Unix & Bash                   |                    Introdução à React                   |                (em progresso :computer:)                |    (em progresso) :computer:    |
-|              Git, GitHub e Internet             | Componentes com Estado, Eventos e Formulários com React |              Docker: Utilizando Containers              |                                 |
-|             Introdução à HTML e CSS             |        Ciclo de Vida de Componentes e React Rout        |                     Introdução à SQL                    |                                 |
-| Introdução à JavaScript e Lógica de Programação |                    Metodologias Ágeis                   |            Funções SQL, JOINs e Normalização            |                                 |
-|      JavaScript: DOM, Eventos e Web Storage     |      Testes automatizados com React Testing Library     |      Introdução ao desenvolvimento Web com Node.js      |                                 |
-|     HTML e CSS: Forms, Flexbox e Responsivo     |            Gerenciamento de estado com Redux            | Node.js: Camada de Serviço e Arquitetura Rest e Restful |                                 |
-|  Introdução à JavaScript ES6 e Testes Unitários |                Context API e React Hooks                |                                                         |                                 |
-|     Higher Order Functions do JavaScript ES6    |                                                         |                                                         |                                 |
-|         JavaScript Assíncrono e Promises        |                                                         |                                                         |                                 |
-|          Testes automatizados com Jest          |                                                         |                                                         |                                 |
+|                   Unix & Bash                   |                    Introdução à React                   |              Docker: Utilizando Containers              |    (em progresso) :computer:    |
+|              Git, GitHub e Internet             | Componentes com Estado, Eventos e Formulários com React |                     Introdução à SQL                    |       Introdução à Python       |
+|             Introdução à HTML e CSS             |        Ciclo de Vida de Componentes e React Rout        |            Funções SQL, JOINs e Normalização            |        Padrões de Projeto       |
+| Introdução à JavaScript e Lógica de Programação |                    Metodologias Ágeis                   |      Introdução ao desenvolvimento Web com Node.js      |    Redes e Raspagem de Dados    |
+|      JavaScript: DOM, Eventos e Web Storage     |      Testes automatizados com React Testing Library     | Node.js: Camada de Serviço e Arquitetura Rest e Restful |                                 |
+|     HTML e CSS: Forms, Flexbox e Responsivo     |            Gerenciamento de estado com Redux            |               Node.js: ORM e Autenticação               |                                 |
+|  Introdução à JavaScript ES6 e Testes Unitários |                Context API e React Hooks                |                        Deployment                       |                                 |
+|     Higher Order Functions do JavaScript ES6    |                                                         |                        TypeScript                       |                                 |
+|         JavaScript Assíncrono e Promises        |                                                         |      Programação Orientada a Objetos (POO) e SOLID      |                                 |
+|          Testes automatizados com Jest          |                                                         |                  Introdução ao MongoDB                  |                                 |
+
