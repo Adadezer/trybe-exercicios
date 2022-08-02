@@ -22,3 +22,6 @@ def instabilidade(valores_coletados):
     return tempo_sem_instabilidade
 
 print(instabilidade([0, 1, 1, 1, 0, 0, 1, 1]))
+
+# Resposta da análise de complexidade:
+# O algoritmo realiza um for, portanto possui Complexidade de Tempo O(n).
