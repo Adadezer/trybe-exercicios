@@ -1,0 +1,3 @@
+dia 37.1 foi apenas teoria
+
+Abordou conceitos sobre Arquitetura, hardware, memória RAM, CPU, Barramentos, S.O, Máquina de Von Nielman
